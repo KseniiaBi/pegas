@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pegas</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Philosopher:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+	<header>
+		<div class="header_top">
+			<nav class="topnav">
+				<a class="h_top_link" href="#">Издательство ПЕГАС</a>
+				<a class="h_top_link" href="#">Блог</a>
+				<a class="h_top_link" href="#">Сотрудничество</a>
+				<a class="h_top_link" href="#">Доставка и оплата</a>
+				<a class="h_top_link" href="#">Контакты</a>
+			</nav>
+			<div class="top_right">
+				<div class="lang">Укр</div>
+				<div class="lang active">Рус</div>
+				<a class="h_top_link my_fav"><img src="img/heart.svg" alt="Закладки">Закладки(1)</a>
+				<a class="h_top_link login"><img src="img/login.svg" alt="Войти">Войти</a>
+			</div>
+		</div>
+
+		<div class="header_mid">
+			<a href="#" class="logo"><img src="img/logo.png" alt="Издательство Пегас"></a>
+
+			<input class="sitesearch" type="search" name="sitesearch" placeholder="Поиск по сайту">
+
+			<div class="contact">
+				<div class="phones_selectbox">
+					<a class="phone selected" href="tel:0507164195">(050) 716 41 95</a>
+					<div class="phones">
+						<a class="phone" href="tel:0507164195">(050) 716 41 95</a>
+						<a class="phone" href="tel:0961990177">(096) 199 01 77</a>
+						<a class="phone" href="tel:0633208956">(063) 320 89 56</a>
+
+						<a class="phone" href="viber://chat?number=%2B380952357425">Viber: (095) 235 74 25</a>
+					</div>
+					<div class="carret"></div>
+				</div>
+				<a class="callback" href="#">Заказать звонок</a>
+			</div>
+
+			<div class="cart">
+				<a href="#" class="cart_btn"><img src="img/cart.svg" alt="Корзина"></a>
+				<div class="cart_info">
+					<strong>Корзина</strong>
+					<div class="cart_info">0 грн</div>
+				</div>
+			</div>
+
+		</div>
+
+		<ul class="menu">
+			<li class="menuitem"><a href="#">Каталог</a>
+				<ul class="submenu">
+					<li class="submenuitem"><a href="#"><strong>Книги по сериям</strong></a></li>
+					<li class="submenuitem"><a href="#">Английский язык детям</a></li>
+					<li class="submenuitem"><a href="#">Буквари и азбуки</a></li>
+					<li class="submenuitem"><a href="#">Стихи для детей</a></li>
+					<li class="submenuitem"><a href="#">Энциклопедии</a></li>
+					<li class="submenuitem"><a href="#">Загадки</a></li>
+					<li class="submenuitem"><a href="#">Сказки</a></li>
+					<li class="submenuitem"><a href="#">Книги для самых маленьких</a></li>
+					<li class="submenuitem"><a href="#">Книги с наклейками</a></li>
+					<li class="submenuitem"><a href="#">Книги с пазлами</a></li>
+					<li class="submenuitem"><a href="#">Книги на картоне</a></li>
+					<li class="submenuitem"><a href="#">Прописи</a></li>
+					<li class="submenuitem"><a href="#">Развивающие книги</a></li>
+					<li class="submenuitem"><a href="#">Раскраски</a></li>
+					<li class="submenuitem"><a href="#">Тесты для дошкольников</a></li>
+					<li class="submenuitem"><a href="#">Читаем по слогам</a></li>
+				</ul>
+			</li>
+			<li class="menuitem"><a href="#">Акции</a></li>
+			<li class="menuitem"><a href="#">Новинки</a></li>
+			<li class="menuitem"><a href="#">Подарочные издания</a></li>
+			<li class="menuitem"><a href="#">Развлечения</a></li>
+		</ul>
+	</header>
+
+	<div class="breadcrumbs">
+		<a href="#">Главная</a>
+		<a href="#">Новинки</a>
+	</div>
+
+
+	<section class="catalog_inner centered">
+		<h2>Новинки</h2>
+		
+		<div class="filter_bar">
+
+			<div class="btn btn_grad showfilters">Фильтр <img src="img/filter.svg" alt=""></div>
+			<div class="btn btn_grad closefilters">Закрыть <img src="img/close_white.svg" alt=""></div>
+
+			<div class="filters">
+
+				<div id="sortby" class="selectbox sort_selectbox">
+					<div class="val_selected sort_selected">Произвольно</div>
+					<div class="sel_options sort_options">
+						<div class="sel_option sort_value">Произвольно</div>
+						<div class="sel_option sort_value">По новинкам</div>
+						<div class="sel_option sort_value">По названию (А-Я)</div>
+						<div class="sel_option sort_value">По названию (Я-А)</div>
+						<div class="sel_option sort_value">По цене (низкая)</div>
+						<div class="sel_option sort_value">По цене (высокая)</div>
+						<div class="sel_option sort_value">По рейтингу (по убыванию)</div>
+						<div class="sel_option sort_value">По рейтингу (по возрастанию)</div>
+					</div>
+				</div>
+
+				<form class="filter_wrap">
+					<div class="filter_group">
+						<div class="filter_title expanded">серия</div>
+						<fieldset class="filter_data">
+							<div class="filter_row">
+								<input type="checkbox" id="v1">
+								<label for="v1"></label>
+								<span class="filter_val">Activities +</span>
+							</div>
+
+							<div class="filter_row">
+								<input type="checkbox" id="v2">
+								<label for="v2"></label>
+								<span class="filter_val">English</span>
+							</div>
+
+							<div class="filter_row">
+								<input type="checkbox" id="v3">
+								<label for="v3"></label>
+								<span class="filter_val">Fashion</span>
+							</div>
+							
+							<div class="filter_row">
+								<input type="checkbox" id="v4">
+								<label for="v4"></label>
+								<span class="filter_val">Весёлый старт</span>
+							</div>
+
+							<div class="filter_row">
+								<input type="checkbox" id="v5">
+								<label for="v5"></label>
+								<span class="filter_val">Водные раскраски</span>
+							</div>
+
+							<div class="filter_row">
+								<input type="checkbox" id="v6">
+								<label for="v6"></label>
+								<span class="filter_val">Всезнайка</span>
+							</div>
+							
+							<div class="filter_row">
+								<input type="checkbox" id="v7">
+								<label for="v7"></label>
+								<span class="filter_val">Говорящая книжка-планшет</span>
+							</div>
+							<div class="filter_row">
+								<input type="checkbox" id="v8">
+								<label for="v8"></label>
+								<span class="filter_val">Activities +</span>
+							</div>
+
+							<div class="filter_row">
+								<input type="checkbox" id="v9">
+								<label for="v9"></label>
+								<span class="filter_val">English</span>
+							</div>
+
+							<div class="filter_row">
+								<input type="checkbox" id="v10">
+								<label for="v10"></label>
+								<span class="filter_val">Fashion</span>
+							</div>
+							
+							<div class="filter_row">
+								<input type="checkbox" id="v11">
+								<label for="v11"></label>
+								<span class="filter_val">Весёлый старт</span>
+							</div>
+							
+							<div class="filter_row">
+								<input type="checkbox" id="v12">
+								<label for="v12"></label>
+								<span class="filter_val">Водные раскраски</span>
+							</div>
+
+							<div class="filter_row">
+								<input type="checkbox" id="v13">
+								<label for="v13"></label>
+								<span class="filter_val">Всезнайка</span>
+							</div>
+							
+							<div class="filter_row">
+								<input type="checkbox" id="v14">
+								<label for="v14"></label>
+								<span class="filter_val">Говорящая книжка-планшет</span>
+							</div>
+						</fieldset>
+					</div>
+
+					<div class="filter_group">
+						<div class="filter_title expanded">Aвтор</div>
+						<fieldset class="filter_data">
+							<div class="filter_row">
+								<input type="checkbox" id="v211">
+								<label for="v211"></label>
+								<span class="filter_val">Андерсен Г. К.</span>
+							</div>
+
+							<div class="filter_row">
+								<input type="checkbox" id="v212">
+								<label for="v212"></label>
+								<span class="filter_val">Братья Гримм</span>
+							</div>
+
+							<div class="filter_row">
+								<input type="checkbox" id="v213">
+								<label for="v213"></label>
+								<span class="filter_val">Гауф В.</span>
+							</div>
+							
+							<div class="filter_row">
+								<input type="checkbox" id="v214">
+								<label for="v214"></label>
+								<span class="filter_val">Гофман Э. Т. А.</span>
+							</div>
+
+							<div class="filter_row">
+								<input type="checkbox" id="v15">
+								<label for="v15"></label>
+								<span class="filter_val">Крылов А.</span>
+							</div>
+
+							<div class="filter_row">
+								<input type="checkbox" id="v16">
+								<label for="v16"></label>
+								<span class="filter_val">Мамин–Сибиряк Д. Н.</span>
+							</div>
+							
+							<div class="filter_row">
+								<input type="checkbox" id="v17">
+								<label for="v17"></label>
+								<span class="filter_val">Маяковский В.</span>
+							</div>
+
+						</fieldset>
+					</div>
+					<div class="filter_group">
+						<div class="filter_title expanded">обложка</div>
+						<fieldset class="filter_data">
+							<div class="filter_row">
+								<input type="checkbox" id="v111">
+								<label for="v111"></label>
+								<span class="filter_val">картон</span>
+							</div>
+
+							<div class="filter_row">
+								<input type="checkbox" id="v112">
+								<label for="v112"></label>
+								<span class="filter_val">мягкая</span>
+							</div>
+
+							<div class="filter_row">
+								<input type="checkbox" id="v113">
+								<label for="v113"></label>
+								<span class="filter_val">с глиттерным напылением</span>
+							</div>
+							
+							<div class="filter_row">
+								<input type="checkbox" id="v114">
+								<label for="v114"></label>
+								<span class="filter_val">с золотым тиснением</span>
+							</div>
+
+							<div class="filter_row">
+								<input type="checkbox" id="v115">
+								<label for="v115"></label>
+								<span class="filter_val">твердая</span>
+							</div>
+
+							<div class="filter_row">
+								<input type="checkbox" id="v116">
+								<label for="v116"></label>
+								<span class="filter_val">твердая с поролоном</span>
+							</div>
+							
+						</fieldset>
+					</div>
+					<div class="filter_group">
+						<div class="filter_title expanded">цена</div>
+
+						<fieldset class="filter_price">
+							<div class="filter_col">
+								<label>От</label>
+								<input type="number" name="startprice" placeholder="5">
+							</div>
+							<div class="filter_col">
+								<label>До</label>
+								<input type="number" name="endprice" placeholder="10000">
+							</div>
+								
+							
+						</fieldset>
+					</div>
+
+					<div class="filters_btns_bar">	
+						<button class="btn btn_bordered" type="reset" name="reset_filters"><span>Сбросить</span></button>
+
+						<button class="btn btn_grad" type="submit" name="apply_filters">Применить</span></button>
+					</div>
+				</form>
+			</div>
+			<div class="fade"></div>
+		</div>
+
+		<div class="new_books">
+			<h1 class="new">Издательство ПЕГАС</h1>
+			<h3>Волшебный мир детской литературы</h3>
+			<p>Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolorecommodo. Magna aliquip aute consectetur ut sunt duis reprehenderit  </p>
+		</div>
+
+		
+		<div class="book_grid">
+
+			<div class="book_item">
+				<div class="book_inner ">
+					<div class="closebtn"></div>
+					<div class="book_preview">
+						<div class="main_img">
+							<img src="img/book_full.jpg" alt="">
+							<div class="book_show">	
+								<button class="book_show_preview btn btn_grad">Предпросмотр</button>
+							</div>
+						</div>
+						
+						<div class="book_pictures carousel">
+							<div class="book_carousel_outer">
+								<div class="book_preview_wrap">
+									<img class="book_miniature" src="img/book_full.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+								</div>
+							</div>
+							<div class="miniatures_next btn_next"></div>
+						</div>
+					</div>
+
+					<div class="book_info">
+						<h4>Набор обучающих карточек</h4>
+						<div class="book_series">Серия “Книжка-пазл”</div>
+						<div class="rating">
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star not_filled"></div>
+						</div>
+						<div class="price sale">
+							<div class="price_old">
+								<div class="full_price">139,00 грн</div>
+								<div class="disc_amount">Скидка 20%</div>
+							</div>
+							<div class="price_new">111,20 грн</div>
+						</div>
+						<div class="isbn">
+							<span class="prop_name">ISBN</span> 978-5-04-113987-2
+						</div>
+						<div class="available instock">В наличии</div>
+						<div class="book_actions">
+							<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
+							<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
+						</div>
+
+						<p class="book_fulldescr"> 
+							Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
+							Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
+						</p>
+
+						<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
+					</div>
+				</div>
+			</div>
+
+			<div class="book_item">
+				<div class="book_inner ">
+					<div class="closebtn"></div>
+					<div class="book_preview">
+						<div class="main_img">
+							<img src="img/book_full.jpg" alt="">
+							<div class="book_show">	
+								<button class="book_show_preview btn btn_grad">Предпросмотр</button>
+							</div>
+						</div>
+						
+						<div class="book_pictures carousel">
+							<div class="book_carousel_outer">
+								<div class="book_preview_wrap">
+									<img class="book_miniature" src="img/book_full.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+								</div>
+							</div>
+							<div class="miniatures_next btn_next"></div>
+						</div>
+					</div>
+
+					<div class="book_info">
+						<h4>Набор обучающих карточек</h4>
+						<div class="book_series">Серия “Книжка-пазл”</div>
+						<div class="rating">
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star not_filled"></div>
+						</div>
+						<div class="price ">139,00 грн</div>
+						<div class="isbn">
+							<span class="prop_name">ISBN</span> 978-5-04-113987-2
+						</div>
+						<div class="available instock">В наличии</div>
+						<div class="book_actions">
+							<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
+							<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
+						</div>
+
+						<p class="book_fulldescr"> 
+							Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
+							Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
+						</p>
+
+						<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
+					</div>
+				</div>
+			</div>
+
+			<div class="book_item">
+				<div class="book_inner ">
+					<div class="closebtn"></div>
+					<div class="book_preview">
+						<div class="main_img">
+							<img src="img/book_full.jpg" alt="">
+							<div class="book_show">	
+								<button class="book_show_preview btn btn_grad">Предпросмотр</button>
+							</div>
+						</div>
+						
+						<div class="book_pictures carousel">
+							<div class="book_carousel_outer">
+								<div class="book_preview_wrap">
+									<img class="book_miniature" src="img/book_full.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+								</div>
+							</div>
+							<div class="miniatures_next btn_next"></div>
+						</div>
+					</div>
+
+					<div class="book_info">
+						<h4>Набор обучающих карточек</h4>
+						<div class="book_series">Серия “Книжка-пазл”</div>
+						<div class="rating">
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star not_filled"></div>
+						</div>
+						<div class="price sale">
+							<div class="price_old">
+								<div class="full_price">139,00 грн</div>
+								<div class="disc_amount">Скидка 20%</div>
+							</div>
+							<div class="price_new">111,20 грн</div>
+						</div>
+						<div class="isbn">
+							<span class="prop_name">ISBN</span> 978-5-04-113987-2
+						</div>
+						<div class="available instock">В наличии</div>
+						<div class="book_actions">
+							<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
+							<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
+						</div>
+
+						<p class="book_fulldescr"> 
+							Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
+							Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
+						</p>
+
+						<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
+					</div>
+				</div>
+			</div>
+
+			<div class="book_item">
+				<div class="book_inner ">
+					<div class="closebtn"></div>
+					<div class="book_preview">
+						<div class="main_img">
+							<img src="img/book_full.jpg" alt="">
+							<div class="book_show">	
+								<button class="book_show_preview btn btn_grad">Предпросмотр</button>
+							</div>
+						</div>
+						
+						<div class="book_pictures carousel">
+							<div class="book_carousel_outer">
+								<div class="book_preview_wrap">
+									<img class="book_miniature" src="img/book_full.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+								</div>
+							</div>
+							<div class="miniatures_next btn_next"></div>
+						</div>
+					</div>
+
+					<div class="book_info">
+						<h4>Набор обучающих карточек</h4>
+						<div class="book_series">Серия “Книжка-пазл”</div>
+						<div class="rating">
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star not_filled"></div>
+						</div>
+						<div class="price sale">
+							<div class="price_old">
+								<div class="full_price">139,00 грн</div>
+								<div class="disc_amount">Скидка 20%</div>
+							</div>
+							<div class="price_new">111,20 грн</div>
+						</div>
+						<div class="isbn">
+							<span class="prop_name">ISBN</span> 978-5-04-113987-2
+						</div>
+						<div class="available instock">В наличии</div>
+						<div class="book_actions">
+							<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
+							<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
+						</div>
+
+						<p class="book_fulldescr"> 
+							Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
+							Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
+						</p>
+
+						<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="book_item">
+				<div class="book_inner ">
+					<div class="closebtn"></div>
+					<div class="book_preview">
+						<div class="main_img">
+							<img src="img/book_full.jpg" alt="">
+							<div class="book_show">	
+								<button class="book_show_preview btn btn_grad">Предпросмотр</button>
+							</div>
+						</div>
+						
+						<div class="book_pictures carousel">
+							<div class="book_carousel_outer">
+								<div class="book_preview_wrap">
+									<img class="book_miniature" src="img/book_full.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+								</div>
+							</div>
+							<div class="miniatures_next btn_next"></div>
+						</div>
+					</div>
+
+					<div class="book_info">
+						<h4>Набор обучающих карточек</h4>
+						<div class="book_series">Серия “Книжка-пазл”</div>
+						<div class="rating">
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star not_filled"></div>
+						</div>
+						<div class="price sale">
+							<div class="price_old">
+								<div class="full_price">139,00 грн</div>
+								<div class="disc_amount">Скидка 20%</div>
+							</div>
+							<div class="price_new">111,20 грн</div>
+						</div>
+						<div class="isbn">
+							<span class="prop_name">ISBN</span> 978-5-04-113987-2
+						</div>
+						<div class="available instock">В наличии</div>
+						<div class="book_actions">
+							<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
+							<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
+						</div>
+
+						<p class="book_fulldescr"> 
+							Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
+							Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
+						</p>
+
+						<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
+					</div>
+				</div>
+			</div>
+
+			<div class="book_item">
+				<div class="book_inner ">
+					<div class="closebtn"></div>
+					<div class="book_preview">
+						<div class="main_img">
+							<img src="img/book_full.jpg" alt="">
+							<div class="book_show">	
+								<button class="book_show_preview btn btn_grad">Предпросмотр</button>
+							</div>
+						</div>
+						
+						<div class="book_pictures carousel">
+							<div class="book_carousel_outer">
+								<div class="book_preview_wrap">
+									<img class="book_miniature" src="img/book_full.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+								</div>
+							</div>
+							<div class="miniatures_next btn_next"></div>
+						</div>
+					</div>
+
+					<div class="book_info">
+						<h4>Набор обучающих карточек</h4>
+						<div class="book_series">Серия “Книжка-пазл”</div>
+						<div class="rating">
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star not_filled"></div>
+						</div>
+						<div class="price ">139,00 грн</div>
+						<div class="isbn">
+							<span class="prop_name">ISBN</span> 978-5-04-113987-2
+						</div>
+						<div class="available instock">В наличии</div>
+						<div class="book_actions">
+							<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
+							<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
+						</div>
+
+						<p class="book_fulldescr"> 
+							Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
+							Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
+						</p>
+
+						<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
+					</div>
+				</div>
+			</div>
+
+			<div class="book_item">
+				<div class="book_inner ">
+					<div class="closebtn"></div>
+					<div class="book_preview">
+						<div class="main_img">
+							<img src="img/book_full.jpg" alt="">
+							<div class="book_show">	
+								<button class="book_show_preview btn btn_grad">Предпросмотр</button>
+							</div>
+						</div>
+						
+						<div class="book_pictures carousel">
+							<div class="book_carousel_outer">
+								<div class="book_preview_wrap">
+									<img class="book_miniature" src="img/book_full.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+								</div>
+							</div>
+							<div class="miniatures_next btn_next"></div>
+						</div>
+					</div>
+
+					<div class="book_info">
+						<h4>Набор обучающих карточек</h4>
+						<div class="book_series">Серия “Книжка-пазл”</div>
+						<div class="rating">
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star not_filled"></div>
+						</div>
+						<div class="price sale">
+							<div class="price_old">
+								<div class="full_price">139,00 грн</div>
+								<div class="disc_amount">Скидка 20%</div>
+							</div>
+							<div class="price_new">111,20 грн</div>
+						</div>
+						<div class="isbn">
+							<span class="prop_name">ISBN</span> 978-5-04-113987-2
+						</div>
+						<div class="available instock">В наличии</div>
+						<div class="book_actions">
+							<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
+							<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
+						</div>
+
+						<p class="book_fulldescr"> 
+							Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
+							Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
+						</p>
+
+						<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
+					</div>
+				</div>
+			</div>
+
+			<div class="book_item">
+				<div class="book_inner ">
+					<div class="closebtn"></div>
+					<div class="book_preview">
+						<div class="main_img">
+							<img src="img/book_full.jpg" alt="">
+							<div class="book_show">	
+								<button class="book_show_preview btn btn_grad">Предпросмотр</button>
+							</div>
+						</div>
+						
+						<div class="book_pictures carousel">
+							<div class="book_carousel_outer">
+								<div class="book_preview_wrap">
+									<img class="book_miniature" src="img/book_full.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+								</div>
+							</div>
+							<div class="miniatures_next btn_next"></div>
+						</div>
+					</div>
+
+					<div class="book_info">
+						<h4>Набор обучающих карточек</h4>
+						<div class="book_series">Серия “Книжка-пазл”</div>
+						<div class="rating">
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star not_filled"></div>
+						</div>
+						<div class="price sale">
+							<div class="price_old">
+								<div class="full_price">139,00 грн</div>
+								<div class="disc_amount">Скидка 20%</div>
+							</div>
+							<div class="price_new">111,20 грн</div>
+						</div>
+						<div class="isbn">
+							<span class="prop_name">ISBN</span> 978-5-04-113987-2
+						</div>
+						<div class="available instock">В наличии</div>
+						<div class="book_actions">
+							<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
+							<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
+						</div>
+
+						<p class="book_fulldescr"> 
+							Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
+							Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
+						</p>
+
+						<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
+					</div>
+				</div>
+			</div>
+
+			<div class="book_item">
+				<div class="book_inner ">
+					<div class="closebtn"></div>
+					<div class="book_preview">
+						<div class="main_img">
+							<img src="img/book_full.jpg" alt="">
+							<div class="book_show">	
+								<button class="book_show_preview btn btn_grad">Предпросмотр</button>
+							</div>
+						</div>
+						
+						<div class="book_pictures carousel">
+							<div class="book_carousel_outer">
+								<div class="book_preview_wrap">
+									<img class="book_miniature" src="img/book_full.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+								</div>
+							</div>
+							<div class="miniatures_next btn_next"></div>
+						</div>
+					</div>
+
+					<div class="book_info">
+						<h4>Набор обучающих карточек</h4>
+						<div class="book_series">Серия “Книжка-пазл”</div>
+						<div class="rating">
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star not_filled"></div>
+						</div>
+						<div class="price sale">
+							<div class="price_old">
+								<div class="full_price">139,00 грн</div>
+								<div class="disc_amount">Скидка 20%</div>
+							</div>
+							<div class="price_new">111,20 грн</div>
+						</div>
+						<div class="isbn">
+							<span class="prop_name">ISBN</span> 978-5-04-113987-2
+						</div>
+						<div class="available instock">В наличии</div>
+						<div class="book_actions">
+							<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
+							<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
+						</div>
+
+						<p class="book_fulldescr"> 
+							Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
+							Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
+						</p>
+
+						<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
+					</div>
+				</div>
+			</div>
+
+			<div class="book_item">
+				<div class="book_inner ">
+					<div class="closebtn"></div>
+					<div class="book_preview">
+						<div class="main_img">
+							<img src="img/book_full.jpg" alt="">
+							<div class="book_show">	
+								<button class="book_show_preview btn btn_grad">Предпросмотр</button>
+							</div>
+						</div>
+						
+						<div class="book_pictures carousel">
+							<div class="book_carousel_outer">
+								<div class="book_preview_wrap">
+									<img class="book_miniature" src="img/book_full.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+								</div>
+							</div>
+							<div class="miniatures_next btn_next"></div>
+						</div>
+					</div>
+
+					<div class="book_info">
+						<h4>Набор обучающих карточек</h4>
+						<div class="book_series">Серия “Книжка-пазл”</div>
+						<div class="rating">
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star not_filled"></div>
+						</div>
+						<div class="price sale">
+							<div class="price_old">
+								<div class="full_price">139,00 грн</div>
+								<div class="disc_amount">Скидка 20%</div>
+							</div>
+							<div class="price_new">111,20 грн</div>
+						</div>
+						<div class="isbn">
+							<span class="prop_name">ISBN</span> 978-5-04-113987-2
+						</div>
+						<div class="available instock">В наличии</div>
+						<div class="book_actions">
+							<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
+							<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
+						</div>
+
+						<p class="book_fulldescr"> 
+							Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
+							Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
+						</p>
+
+						<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
+					</div>
+				</div>
+			</div>
+
+			<div class="book_item">
+				<div class="book_inner ">
+					<div class="closebtn"></div>
+					<div class="book_preview">
+						<div class="main_img">
+							<img src="img/book_full.jpg" alt="">
+							<div class="book_show">	
+								<button class="book_show_preview btn btn_grad">Предпросмотр</button>
+							</div>
+						</div>
+						
+						<div class="book_pictures carousel">
+							<div class="book_carousel_outer">
+								<div class="book_preview_wrap">
+									<img class="book_miniature" src="img/book_full.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+								</div>
+							</div>
+							<div class="miniatures_next btn_next"></div>
+						</div>
+					</div>
+
+					<div class="book_info">
+						<h4>Набор обучающих карточек</h4>
+						<div class="book_series">Серия “Книжка-пазл”</div>
+						<div class="rating">
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star not_filled"></div>
+						</div>
+						<div class="price sale">
+							<div class="price_old">
+								<div class="full_price">139,00 грн</div>
+								<div class="disc_amount">Скидка 20%</div>
+							</div>
+							<div class="price_new">111,20 грн</div>
+						</div>
+						<div class="isbn">
+							<span class="prop_name">ISBN</span> 978-5-04-113987-2
+						</div>
+						<div class="available instock">В наличии</div>
+						<div class="book_actions">
+							<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
+							<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
+						</div>
+
+						<p class="book_fulldescr"> 
+							Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
+							Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
+						</p>
+
+						<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
+					</div>
+				</div>
+			</div>
+
+			<div class="book_item">
+				<div class="book_inner ">
+					<div class="closebtn"></div>
+					<div class="book_preview">
+						<div class="main_img">
+							<img src="img/book_full.jpg" alt="">
+							<div class="book_show">	
+								<button class="book_show_preview btn btn_grad">Предпросмотр</button>
+							</div>
+						</div>
+						
+						<div class="book_pictures carousel">
+							<div class="book_carousel_outer">
+								<div class="book_preview_wrap">
+									<img class="book_miniature" src="img/book_full.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+								</div>
+							</div>
+							<div class="miniatures_next btn_next"></div>
+						</div>
+					</div>
+
+					<div class="book_info">
+						<h4>Набор обучающих карточек</h4>
+						<div class="book_series">Серия “Книжка-пазл”</div>
+						<div class="rating">
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star filled"></div>
+							<div class="star not_filled"></div>
+						</div>
+						<div class="price sale">
+							<div class="price_old">
+								<div class="full_price">139,00 грн</div>
+								<div class="disc_amount">Скидка 20%</div>
+							</div>
+							<div class="price_new">111,20 грн</div>
+						</div>
+						<div class="isbn">
+							<span class="prop_name">ISBN</span> 978-5-04-113987-2
+						</div>
+						<div class="available instock">В наличии</div>
+						<div class="book_actions">
+							<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
+							<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
+						</div>
+
+						<p class="book_fulldescr"> 
+							Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
+							Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
+						</p>
+
+						<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="catalog_actions">
+			<button class="btn btn_grad">Загрузить еще</button>
+			<button class="btn btn_bordered"><span>Загрузить всё</span></button>
+
+			<div class="pagination">
+				<a class="pagination_page active" href="#">1</a>
+				<a class="pagination_page " href="#">2</a>
+				<a class="pagination_page " href="#">3</a>
+				<a class="pagination_next btn_next" href="#"></a>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<section class="subscription">
+		<h2>До сих пор не подписан на нас в социальных сетях?</h2>
+		<p>Скорее подписывайся и будь в курсе всех новинок!</p>
+		<div class="socials">
+			<a href="https://www.instagram.com/pegas.books/" target="_blank"><img src="img/instagram.svg" alt="instagram"></a>
+			<a href="https://www.youtube.com/channel/UCMqXkwLBv5xwGG44a3zDfXg" target="_blank"><img src="img/youtube.svg" alt="youtube"></a>
+			<a href="https://www.facebook.com/pegasbooks" target="_blank"><img src="img/facebook.svg" alt="facebook"></a>
+		</div>
+		
+	</section>
+
+	<footer>
+		<svg id="footer_top" viewBox="0 0 1440 622" >
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M0 122C45.5 89.6837 188.7 39.2438 391.5 78.0233C636.829 124.935 779.59 79.551 835.683 61.7186C837.551 61.1247 839.324 60.5614 841 60.033C845.482 58.6204 850.982 56.8035 857.389 54.6873C930.305 30.6005 1120.64 -32.2741 1264.5 20.5539C1389.7 66.5294 1434.17 105.842 1440 122L1440 622H0V122Z" fill="url(#paint0_linear)"/>
+			<defs>
+			<linearGradient id="paint0_linear" x1="1.46771e-05" y1="326.55" x2="1440" y2="326.55" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#587A41"/>
+			<stop offset="1" stop-color="#79AB49"/>
+			</linearGradient>
+			</defs>
+		</svg>
+		<div class="footercol">
+			<h3>Издательство</h3>
+			<a class="footerlink" href="#">О нас</a>
+			<a class="footerlink" href="#">Блог</a>
+			<a class="footerlink" href="#">Контакты</a>
+		</div>
+
+
+		<div class="footercol">
+			<h3>Информация</h3>
+			<a class="footerlink" href="#">Акции</a>
+			<a class="footerlink" href="#">Сотрудничество</a>
+			<a class="footerlink" href="#">Оплата и доставка</a>
+			<a class="footerlink" href="#">Гарантийные условия</a>
+			<a class="footerlink" href="#">Возврат товара</a>
+		</div>
+
+		<div class="footercol">
+			<h3>Личный кабинет</h3>
+			<a class="footerlink" href="#">Мой кабинет</a>
+			<a class="footerlink" href="#">Личные данные</a>
+			<a class="footerlink" href="#">Мои заказы</a>
+			<a class="footerlink" href="#">Мои закладки</a>
+			<a class="footerlink" href="#">Моя корзина</a>
+		</div>
+
+		<div class="footercol">
+			<h3>Контакты</h3>
+			<div class="phones_selectbox">
+					<a class="phone selected" href="tel:0507164195">(050) 716 41 95</a>
+					<div class="phones">
+						<a class="phone" href="tel:0507164195">(050) 716 41 95</a>
+						<a class="phone" href="tel:0961990177">(096) 199 01 77</a>
+						<a class="phone" href="tel:0633208956">(063) 320 89 56</a>
+
+						<a class="phone" href="viber://chat?number=%2B380952357425">Viber: (095) 235 74 25</a>
+					</div>
+					<div class="carret"></div>
+				</div>
+
+			<h3>Наши социальные сети</h3>
+			<div class="socials">
+				<a href="https://www.instagram.com/pegas.books/" target="_blank"><img src="img/instagram.svg" alt="instagram"></a>
+				<a href="https://www.youtube.com/channel/UCMqXkwLBv5xwGG44a3zDfXg" target="_blank"><img src="img/youtube.svg" alt="youtube"></a>
+				<a href="https://www.facebook.com/pegasbooks" target="_blank"><img src="img/facebook.svg" alt="facebook"></a>
+			</div>
+		</div>
+		
+		<div class="copyrights">
+			<p class="copy">&copy; Издательство Пегас 2020</p>
+			<a href="https://goo.gl/maps/z8UmyZBj6Gm2CjGb6" target="_blank" class="adress">Украина,  г.Харьков, ул. Мало-Панасовская 4/7</a>
+		</div>
+
+	</footer>
+
+
+
+<!-- callback modal -->
+
+	<div id="call_me" class="modal">
+		<div class="modal_content">
+			<div class="closebtn"></div>
+			<h2>Заказать звонок</h2>
+			<p>Оставьте свой контактный номер, мы перезвоним Вам в ближайшее время и ответим на все вопросы</p>
+			
+			<form class="login">
+				<fieldset class="log_fields">
+					<label>Введите номер телефона </label>
+					<input type="phone" name="callbackphone" placeholder="+38 (000) 000 00 00">
+				</fieldset>
+				<input class="btn btn_grad" type="submit" value="Перезвоните мне">
+			</form>
+		</div>
+	</div>
+
+	<!-- modal show book preview -->
+
+	<div id="showbook" class="modal"></div>
+	<script src="main.js"></script>
+</body>
+</html>
