@@ -11,18 +11,20 @@
 </head>
 <body>
 
-	<header>
+	<header class="">
 		<div class="header_top">
 			<nav class="topnav">
 				<a class="h_top_link" href="#">Издательство ПЕГАС</a>
-				<a class="h_top_link" href="#">Блог</a>
+				<a class="h_top_link has_inner" href="#">Блог</a>
 				<a class="h_top_link" href="#">Сотрудничество</a>
 				<a class="h_top_link" href="#">Доставка и оплата</a>
 				<a class="h_top_link" href="#">Контакты</a>
 			</nav>
 			<div class="top_right">
-				<div class="lang">Укр</div>
-				<div class="lang active">Рус</div>
+				<div class="lang_wrap">
+					<div class="lang">Укр</div>
+					<div class="lang active">Рус</div>
+				</div>
 				<a class="h_top_link my_fav"><img src="img/heart.svg" alt="Закладки">Закладки(1)</a>
 				<a class="h_top_link login"><img src="img/login.svg" alt="Войти">Войти</a>
 			</div>
@@ -32,6 +34,7 @@
 			<a href="#" class="logo"><img src="img/logo.png" alt="Издательство Пегас"></a>
 
 			<input class="sitesearch" type="search" name="sitesearch" placeholder="Поиск по сайту">
+			<div class="search_icon_btn"></div>
 
 			<div class="contact">
 				<div class="phones_selectbox">
@@ -48,7 +51,9 @@
 				<a class="callback" href="#">Заказать звонок</a>
 			</div>
 
-			<div class="cart">
+			<a class="h_top_link my_fav"><img src="img/heart.svg" alt="Закладки">Закладки(1)</a>
+
+			<div class="cart not_empty">
 				<a href="#" class="cart_btn"><img src="img/cart.svg" alt="Корзина"></a>
 				<div class="cart_info">
 					<strong>Корзина</strong>
@@ -56,9 +61,16 @@
 				</div>
 			</div>
 
+			<div class="menubtn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
 		</div>
 
 		<ul class="menu">
+			<li class="menuitem showmobile active"><a href="#">Главная</a></li>
 			<li class="menuitem"><a href="#">Каталог</a>
 				<ul class="submenu">
 					<li class="submenuitem"><a href="#"><strong>Книги по сериям</strong></a></li>
@@ -106,19 +118,18 @@
 		<h2>Подробнее о нас</h2>
 		<p class="more_about_txt">В ассортименте издательского дома представлено более 1700 позиций в 63 сериях: энциклопедии, сборники сказок, стихов, книги-пазлы, атласы, книги по наклейками, на картоне, с окошками, раскраски. Книги для детей и подростков от 0 до 18 лет выходят на украинском, русском, английском и румынском языках.</p>
 
-		<video class="morevid">
-			<source src="vid.mp4" type="">
-		</video>
+		<div class="morevid">
+			<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fpegasbooks%2Fvideos%2F493595170819495%2F&amp;show_text=0&amp;width=560" width="1170" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
+		</div>
 	</section>
 
 	<section class="more_about centered">
 		<h2>Что нового?</h2>
 		<p class="more_about_txt">Новой страницей в развитии издательства является выпуск в 2019 году серию книг со звуковыми планшетами. В озвучивании планшетов использовано природные голоса животных, песни, загадки, логические упражнения, стихи, в том числе логопедические, для развития речи.</p>
 
-		<video class="morevid">
-			<source src="movie.mp4" type="video/mp4">
-  			<source src="movie.ogg" type="video/ogg">
-		</video>
+		<div class="morevid">
+			<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fpegasbooks%2Fvideos%2F507373193100851%2F&amp;show_text=0&amp;width=476" width="1170" height="400" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
+		</div>
 	</section>
 
 

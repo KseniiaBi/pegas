@@ -11,18 +11,20 @@
 </head>
 <body>
 
-	<header>
+	<header class="">
 		<div class="header_top">
 			<nav class="topnav">
 				<a class="h_top_link" href="#">Издательство ПЕГАС</a>
-				<a class="h_top_link" href="#">Блог</a>
+				<a class="h_top_link has_inner" href="#">Блог</a>
 				<a class="h_top_link" href="#">Сотрудничество</a>
 				<a class="h_top_link" href="#">Доставка и оплата</a>
 				<a class="h_top_link" href="#">Контакты</a>
 			</nav>
 			<div class="top_right">
-				<div class="lang">Укр</div>
-				<div class="lang active">Рус</div>
+				<div class="lang_wrap">
+					<div class="lang">Укр</div>
+					<div class="lang active">Рус</div>
+				</div>
 				<a class="h_top_link my_fav"><img src="img/heart.svg" alt="Закладки">Закладки(1)</a>
 				<a class="h_top_link login"><img src="img/login.svg" alt="Войти">Войти</a>
 			</div>
@@ -32,6 +34,7 @@
 			<a href="#" class="logo"><img src="img/logo.png" alt="Издательство Пегас"></a>
 
 			<input class="sitesearch" type="search" name="sitesearch" placeholder="Поиск по сайту">
+			<div class="search_icon_btn"></div>
 
 			<div class="contact">
 				<div class="phones_selectbox">
@@ -48,7 +51,9 @@
 				<a class="callback" href="#">Заказать звонок</a>
 			</div>
 
-			<div class="cart">
+			<a class="h_top_link my_fav"><img src="img/heart.svg" alt="Закладки">Закладки(1)</a>
+
+			<div class="cart not_empty">
 				<a href="#" class="cart_btn"><img src="img/cart.svg" alt="Корзина"></a>
 				<div class="cart_info">
 					<strong>Корзина</strong>
@@ -56,9 +61,16 @@
 				</div>
 			</div>
 
+			<div class="menubtn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
 		</div>
 
 		<ul class="menu">
+			<li class="menuitem showmobile"><a href="#">Главная</a></li>
 			<li class="menuitem"><a href="#">Каталог</a>
 				<ul class="submenu">
 					<li class="submenuitem"><a href="#"><strong>Книги по сериям</strong></a></li>
@@ -81,7 +93,7 @@
 			</li>
 			<li class="menuitem"><a href="#">Акции</a></li>
 			<li class="menuitem"><a href="#">Новинки</a></li>
-			<li class="menuitem"><a href="#">Подарочные издания</a></li>
+			<li class="menuitem active"><a href="#">Подарочные издания</a></li>
 			<li class="menuitem"><a href="#">Развлечения</a></li>
 		</ul>
 	</header>
@@ -440,7 +452,8 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="book_carousel_outer">
+								<div class="miniatures_prev btn_prev"></div>
+				<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -499,67 +512,8 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="book_carousel_outer">
-									<div class="book_preview_wrap">
-										<img class="book_miniature" src="img/book_full.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-									</div>
-								</div>
-								<div class="miniatures_next btn_next"></div>
-							</div>
-						</div>
-
-						<div class="book_info">
-							<h4>Набор обучающих карточек</h4>
-							<div class="book_series">Серия “Книжка-пазл”</div>
-							<div class="rating">
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star not_filled"></div>
-							</div>
-							<div class="price sale">
-								<div class="price_old">
-									<div class="full_price">139,00 грн</div>
-									<div class="disc_amount">Скидка 20%</div>
-								</div>
-								<div class="price_new">111,20 грн</div>
-							</div>
-							<div class="isbn">
-								<span class="prop_name">ISBN</span> 978-5-04-113987-2
-							</div>
-							<div class="available instock">В наличии</div>
-							<div class="book_actions">
-								<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
-								<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
-							</div>
-
-							<p class="book_fulldescr"> 
-								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
-								Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
-							</p>
-
-							<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
-						</div>
-					</div>
-				</div>
-
-				<div class="book_item">
-					<div class="book_inner ">
-						<div class="closebtn"></div>
-						<div class="book_preview">
-							<div class="main_img">
-								<img src="img/book_full.jpg" alt="">
-								<div class="book_show">	
-									<button class="book_show_preview btn btn_grad">Предпросмотр</button>
-								</div>
-							</div>
-							
-							<div class="book_pictures carousel">
-								<div class="book_carousel_outer">
+								<div class="miniatures_prev btn_prev"></div>
+				<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -619,7 +573,8 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="book_carousel_outer">
+								<div class="miniatures_prev btn_prev"></div>
+				<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -679,7 +634,8 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="book_carousel_outer">
+								<div class="miniatures_prev btn_prev"></div>
+				<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -739,7 +695,8 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="book_carousel_outer">
+								<div class="miniatures_prev btn_prev"></div>
+				<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -799,7 +756,8 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="book_carousel_outer">
+								<div class="miniatures_prev btn_prev"></div>
+				<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -859,7 +817,69 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="book_carousel_outer">
+								<div class="miniatures_prev btn_prev"></div>
+				<div class="book_carousel_outer">
+									<div class="book_preview_wrap">
+										<img class="book_miniature" src="img/book_full.jpg" alt="">	
+										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									</div>
+								</div>
+								<div class="miniatures_next btn_next"></div>
+							</div>
+						</div>
+
+						<div class="book_info">
+							<h4>Набор обучающих карточек</h4>
+							<div class="book_series">Серия “Книжка-пазл”</div>
+							<div class="rating">
+								<div class="star filled"></div>
+								<div class="star filled"></div>
+								<div class="star filled"></div>
+								<div class="star filled"></div>
+								<div class="star not_filled"></div>
+							</div>
+							<div class="price sale">
+								<div class="price_old">
+									<div class="full_price">139,00 грн</div>
+									<div class="disc_amount">Скидка 20%</div>
+								</div>
+								<div class="price_new">111,20 грн</div>
+							</div>
+							<div class="isbn">
+								<span class="prop_name">ISBN</span> 978-5-04-113987-2
+							</div>
+							<div class="available instock">В наличии</div>
+							<div class="book_actions">
+								<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
+								<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
+							</div>
+
+							<p class="book_fulldescr"> 
+								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
+								Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
+							</p>
+
+							<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
+						</div>
+					</div>
+				</div>
+
+				<div class="book_item">
+					<div class="book_inner ">
+						<div class="closebtn"></div>
+						<div class="book_preview">
+							<div class="main_img">
+								<img src="img/book_full.jpg" alt="">
+								<div class="book_show">	
+									<button class="book_show_preview btn btn_grad">Предпросмотр</button>
+								</div>
+							</div>
+							
+							<div class="book_pictures carousel">
+								<div class="miniatures_prev btn_prev"></div>
+				<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -933,7 +953,8 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="book_carousel_outer">
+								<div class="miniatures_prev btn_prev"></div>
+				<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -987,7 +1008,8 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="book_carousel_outer">
+								<div class="miniatures_prev btn_prev"></div>
+				<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -1041,7 +1063,8 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="book_carousel_outer">
+								<div class="miniatures_prev btn_prev"></div>
+				<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -1095,7 +1118,8 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="book_carousel_outer">
+								<div class="miniatures_prev btn_prev"></div>
+				<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -1149,7 +1173,8 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="book_carousel_outer">
+								<div class="miniatures_prev btn_prev"></div>
+				<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -1203,7 +1228,8 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="book_carousel_outer">
+								<div class="miniatures_prev btn_prev"></div>
+				<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -1257,7 +1283,8 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="book_carousel_outer">
+								<div class="miniatures_prev btn_prev"></div>
+				<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -1311,7 +1338,8 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="book_carousel_outer">
+								<div class="miniatures_prev btn_prev"></div>
+				<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -1365,7 +1393,8 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="book_carousel_outer">
+								<div class="miniatures_prev btn_prev"></div>
+				<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -1433,7 +1462,8 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="book_carousel_outer">
+								<div class="miniatures_prev btn_prev"></div>
+				<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -1487,7 +1517,8 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="book_carousel_outer">
+								<div class="miniatures_prev btn_prev"></div>
+				<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -1541,7 +1572,8 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="book_carousel_outer">
+								<div class="miniatures_prev btn_prev"></div>
+				<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -1595,7 +1627,8 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="book_carousel_outer">
+								<div class="miniatures_prev btn_prev"></div>
+				<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -1649,7 +1682,8 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="book_carousel_outer">
+								<div class="miniatures_prev btn_prev"></div>
+				<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -1703,7 +1737,8 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="book_carousel_outer">
+								<div class="miniatures_prev btn_prev"></div>
+				<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -1757,7 +1792,8 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="book_carousel_outer">
+								<div class="miniatures_prev btn_prev"></div>
+				<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -1811,7 +1847,8 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="book_carousel_outer">
+								<div class="miniatures_prev btn_prev"></div>
+				<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -1865,7 +1902,8 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="book_carousel_outer">
+								<div class="miniatures_prev btn_prev"></div>
+				<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	

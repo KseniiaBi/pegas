@@ -10,15 +10,51 @@ let detailsCol1 = document.querySelector('#det_col1');
 let detailsCol2 = document.querySelector('#det_col2');
 let det_prevbtn = document.querySelector('.dc_prev');
 let det_nextbtn = document.querySelector('.dc_next');
+let menubtn =  document.querySelector('.menubtn');
+let header = document.querySelector('header');
+let search_btn = document.querySelector('.search_icon_btn');
+let search_field = document.querySelector('.sitesearch');
+let isShowingSearch = false;
+let ageFilterStr = '';
+let genderfilterStr = '';
+let priceFilter = ''; 
 
+if((screen.width < 768 || window.innerWidth < 768) && search_btn != null){
+	search_btn.onclick = () => search_field.classList.toggle('opened');
+	search_field.onkeyup = (e) => {
+		if(e.keyCode == 13){
+			search_field.classList.remove('opened');
+		} 
+	}
+}
+search_field.onsubmit = () => search_field.classList.remove('opened');
+
+menubtn.onclick = () => header.classList.toggle('opened');
 
 if(filters){
 	filterbtn.onclick = () => filters.classList.add('opened');
 	closeFilterBtn.onclick = () => filters.classList.remove('opened');
 }
 
-
 callBackBtn.onclick = () => callbackModal.style.display = 'flex';
+
+let createURL = () => {
+	let url = window.location.origin;
+
+	if(ageFilterStr.length > 0){
+	 url += `${ageFilterStr}/`;
+	}
+	if(genderfilterStr.length > 0){
+	 url += `${genderfilterStr}/`;
+	}
+
+	if(priceFilter.length > 0){
+		url += priceFilter;
+	}
+	console.log(url);
+	// window.location.href = url;
+}
+
 
 document.addEventListener('click', function(e){
 	if(e.target.classList.contains('dc_prev') && !e.target.classList.contains('inactive')){
@@ -45,6 +81,7 @@ document.addEventListener('click', function(e){
 		}
 	}
 	if(e.target.classList.contains('book_miniature')){
+		let mainImg = e.target.parentNode.parentNode.parentNode.parentNode.querySelector('.main_img img');
 		mainImg.src = e.target.src;
 	}
 
@@ -60,10 +97,20 @@ document.addEventListener('click', function(e){
 		showbookModal.innerHTML = '';
 		showbookModal.append(bookInner);
 		showbookModal.style.display = 'flex';
+		let prevC = showbookModal.querySelector('.book_preview_wrap');
+		let previewCar = new MiniaturesCarousel(prevC);
 	}	
 	// close modal
 	if(e.target.classList.contains('closebtn')){
-		e.target.parentNode.parentNode.style.display = 'none';
+		
+		if(e.target.parentNode.classList.contains('opened_preview')){
+			showbookModal.style.display = 'none';
+			e.target.parentNode.classList.remove('opened_preview');
+			e.target.parentNode.classList.remove('book_view');
+		}
+		else{
+			e.target.parentNode.parentNode.style.display = 'none';
+		}
 	}
 	//  selectbox
 	if(e.target.classList.contains('val_selected')){
@@ -78,6 +125,16 @@ document.addEventListener('click', function(e){
 		e.target.parentNode.parentNode.classList.remove('expanded');
 		let selected = e.target.parentNode.parentNode.querySelector('.val_selected');
 		selected.innerText = e.target.innerText;
+		
+		if(e.target.parentNode.parentNode.id == 'sel_age'){
+			ageFilterStr = ageFilterStr.length == 0 ?  ageFilterStr += e.target.dataset.value : ageFilterStr += '~' + e.target.dataset.value;
+		}	
+		if(e.target.parentNode.parentNode.id == 'sel_gender'){
+			genderfilterStr = genderfilterStr.length == 0 ?  genderfilterStr += e.target.dataset.value : genderfilterStr += '~' + e.target.dataset.value;
+		}
+	}
+	if(e.target.id == 'sel_book_btn'){
+		createURL();
 	}
 	
 });
@@ -95,6 +152,9 @@ if(price_range){
 	let bar = price_range.querySelector('.price_bar');
 	let bar_width = bar.offsetWidth  - endBullet.offsetWidth;
 
+	let priceValStart = startAmount;
+	let priceValEnd = endAmount;
+
 	function moveThumb(event, el) {
 	  event.preventDefault(); // prevent selection start (browser action)
 
@@ -110,6 +170,9 @@ if(price_range){
 	    let neib = el == endBullet ? startBullet : endBullet;
 	    let neibLeft = window.getComputedStyle(neib).getPropertyValue('left');
 	    neibLeft = neibLeft.substr(0, neibLeft.length - 2);
+
+
+
 	    // the pointer is out of slider => lock the thumb within the bounaries
 	    if (newLeft < 0) {
 	      newLeft = 0;
@@ -125,11 +188,22 @@ if(price_range){
 	    }
 
 	    let price = +price_range.dataset.max;
-	    let priceSpan = el == endBullet ? endNum : startNum;
+	    let priceSpan;
+	    let priceNum = Math.floor(price*(newLeft )/bar_width);
 
-	    priceSpan.innerText = Math.floor(price*(newLeft )/bar_width);
-
+	    if(el == endBullet){
+			priceSpan = endNum;
+			priceValEnd = priceNum;
+	    }
+	    else{
+	    	priceSpan = startNum;
+	    	priceValStart = priceNum;
+	    }
+	    
+	    priceSpan.innerText = priceNum;
+	    targetFilter = priceNum;
 	    el.style.left = newLeft + 'px';
+	    priceFilter =  `?prs[1]=${priceValStart}.00-${priceValEnd}.00`;
 	  }
 
 	  function onMouseUp() {
@@ -266,7 +340,6 @@ class Carousel{
 			}
 		}
 		this.wrap.style.transform = `translateX(${this.currentTransform}px)`;
-		
 		this.checkBookArrows();
 	}
 
@@ -285,38 +358,79 @@ if(book_carousels.length > 0){
 
 
 // book card carousel
-let prev_prev_btn = document.querySelector('.miniatures_prev');
-let prev_next_btn = document.querySelector('.miniatures_next');
-let miniatures_wrap = document.querySelector('.book_preview_wrap');
-let miniatures = document.querySelectorAll('.book_miniature');
 
-if(miniatures_wrap){
-	let miniature_margin = window.getComputedStyle(miniatures[0]).getPropertyValue('margin-right');
-	miniature_margin =	miniature_margin.substr(0, miniature_margin.length-2);
-	let target_move = miniatures[0].offsetWidth + Number(miniature_margin);
+class MiniaturesCarousel{
+	constructor(wrap){
+		this.parent = wrap;
+		this.prev_btn = this.parent.parentNode.parentNode.querySelector('.miniatures_prev');
+		this.next_btn = this.parent.parentNode.parentNode.querySelector('.miniatures_next');
+		this.miniatures = this.parent.querySelectorAll('.book_miniature');
+		this.miniature_margin = window.getComputedStyle(this.miniatures[0]).getPropertyValue('margin-right');
+		this.miniature_margin =	this.miniature_margin.substr(0, this.miniature_margin.length-2);
+		this.target_move = this.miniatures[0].offsetWidth + Number(this.miniature_margin);
+		this.minsInView = Math.ceil(this.parent.offsetWidth / this.target_move);
+		this.currentMinTr = 0;
 
-	document.addEventListener('click', function(){
-		if(event.target.classList.contains('miniatures_prev')){
-			previews_prev();
-		}
-		if(event.target.classList.contains('miniatures_next')){
-			previews_next();
-		}
-	});
-
-	function previews_next(){
-		miniatures_wrap.style.transform = `translateX(-${target_move}px)`;	
-		miniatures_wrap.style.transform = 0;
-		miniatures_wrap.lastElementChild.after(miniatures_wrap.firstElementChild);
+		this.prev_btn.onclick =  this.previews_prev.bind(this);
+		this.next_btn.onclick =  this.previews_next.bind(this);
+		
+		this.showingLastMiniature = false;
+		this.showingFirstMiniature = true;
+		this.checkArrows();
 	}
 
-	function previews_prev(){
-		miniatures_wrap.firstElementChild.before(miniatures_wrap.lastElementChild);
-		miniatures_wrap.style.transform = `translateX(-${target_move}px)`;
-		miniatures_wrap.style.transform = `translateX(${0}px)`;
+
+	checkArrows(){
+		if(this.currentMinTr == -1*this.target_move*this.minsInView){
+			this.showingLastMiniature = true;
+			this.showingFirstMiniature = false;
+			this.next_btn.classList.add('inactive');
+			this.prev_btn.classList.remove('inactive');
+		}
+		else if(this.currentMinTr == 0){
+			this.showingLastMiniature = false;
+			this.showingFirstMiniature = true;
+			this.prev_btn.classList.add('inactive');
+			this.next_btn.classList.remove('inactive');
+		}
+		else{
+			this.showingLastMiniature = false;
+			this.showingFirstMiniature = false;
+			this.next_btn.classList.remove('inactive');
+			this.prev_btn.classList.remove('inactive');
+		}
 	}
 
+	previews_next(){
+		console.log(111);
+		if(!this.showingLastMiniature){
+			this.currentMinTr -= this.target_move;
+			this.parent.style.transform = `translateX(${this.currentMinTr}px)`;	
+			this.checkArrows();
+		}
+		
+	}
+
+	previews_prev(){
+		console.log(111);
+		if(!this.showingFirstMiniature){
+			this.currentMinTr += this.target_move;
+			this.parent.style.transform = `translateX(${this.currentMinTr}px)`;
+			this.checkArrows();
+		}
+		
+	}
 }
+
+let miniatures_wrap = document.querySelectorAll('.book_view .book_preview_wrap');
+
+if(miniatures_wrap.length > 0){
+	for(let i = 0; i < miniatures_wrap.length; i++){
+		let mc = new MiniaturesCarousel(miniatures_wrap[i]);
+	}
+}
+
+
 
 // tabs
 
@@ -352,6 +466,26 @@ if(tabs.length > 0){
 	for(let i = 0; i < tabs.length; i++){
 		let tabId = tabs[i].dataset.id;
 		let t = new Tabs(tabs[i],tabId);
-		console.log(t);
 	}
 }
+
+// top menu show active link
+window.onload = () => {
+	if(screen.width < 600 || window.innerWidth < 600){
+		let menu = document.querySelector('ul.menu');
+		let currLink = menu.querySelector('.menuitem.active');
+		let currLinkWidth = window.getComputedStyle(currLink).width;
+		currLinkWidth = Math.floor(Number(currLinkWidth.substr(0,currLinkWidth.length-2)));
+		let maxOffset = document.body.offsetWidth;
+
+		let linkOffset = currLink.offsetLeft;
+		if(linkOffset + currLinkWidth > maxOffset){
+			linkOffset = maxOffset + 45;
+		}
+		menu.scrollLeft = linkOffset - 14;
+	}
+}
+
+	
+
+

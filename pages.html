@@ -10,19 +10,20 @@
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
-
-	<header>
+<header class="">
 		<div class="header_top">
 			<nav class="topnav">
 				<a class="h_top_link" href="#">Издательство ПЕГАС</a>
-				<a class="h_top_link" href="#">Блог</a>
+				<a class="h_top_link has_inner" href="#">Блог</a>
 				<a class="h_top_link" href="#">Сотрудничество</a>
 				<a class="h_top_link" href="#">Доставка и оплата</a>
 				<a class="h_top_link" href="#">Контакты</a>
 			</nav>
 			<div class="top_right">
-				<div class="lang">Укр</div>
-				<div class="lang active">Рус</div>
+				<div class="lang_wrap">
+					<div class="lang">Укр</div>
+					<div class="lang active">Рус</div>
+				</div>
 				<a class="h_top_link my_fav"><img src="img/heart.svg" alt="Закладки">Закладки(1)</a>
 				<a class="h_top_link login"><img src="img/login.svg" alt="Войти">Войти</a>
 			</div>
@@ -32,6 +33,7 @@
 			<a href="#" class="logo"><img src="img/logo.png" alt="Издательство Пегас"></a>
 
 			<input class="sitesearch" type="search" name="sitesearch" placeholder="Поиск по сайту">
+			<div class="search_icon_btn"></div>
 
 			<div class="contact">
 				<div class="phones_selectbox">
@@ -48,7 +50,9 @@
 				<a class="callback" href="#">Заказать звонок</a>
 			</div>
 
-			<div class="cart">
+			<a class="h_top_link my_fav"><img src="img/heart.svg" alt="Закладки">Закладки(1)</a>
+
+			<div class="cart not_empty">
 				<a href="#" class="cart_btn"><img src="img/cart.svg" alt="Корзина"></a>
 				<div class="cart_info">
 					<strong>Корзина</strong>
@@ -56,9 +60,16 @@
 				</div>
 			</div>
 
+			<div class="menubtn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
 		</div>
 
 		<ul class="menu">
+			<li class="menuitem showmobile active"><a href="#">Главная</a></li>
 			<li class="menuitem"><a href="#">Каталог</a>
 				<ul class="submenu">
 					<li class="submenuitem"><a href="#"><strong>Книги по сериям</strong></a></li>
