@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Philosopher:wght@700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="main.css">
 </head>
-<body class="cartpage">
+<body>
 
 	<header class="">
 		<div class="header_top">
@@ -101,127 +101,285 @@
 
 	<div class="breadcrumbs">
 		<a href="#">Главная</a>
-		<a href="#">Корзина</a>
+		<a href="#">Каталог</a>
+		<a href="#">Английский язык детям</a>
 	</div>
 
-	<section class="cart_inner centered">
-		<h2>Корзина</h2>
+	<div class="book_view centered">
+			
+		<h2>Английский детям</h2>
 
-		<div class="cart_content">
-			<div class="cart_item">
-				<img class="cart_preview" src="img/book_preview.jpg" alt="">
-					<h5>Название книги</h5>
-				<div class="cart_item_info">
-					<div class="info_row">
-						<div class="book_prop">Серия</div>
-						<div class="book_val">Наборы обучающих карточек</div>
-					</div>
-					<div class="info_row">
-						<div class="book_prop">Язык</div>
-						<div class="book_val">Русский</div>
-					</div>
-
-					<div class="info_row">
-						<div class="book_prop">ISBN</div>
-						<div class="book_val">6516513135</div>
+		<div class="book_preview">
+			<div class="main_img">
+				<img src="img/book_full.jpg" alt="">
+			</div>
+			
+			<div class="book_pictures carousel">
+				<div class="miniatures_prev btn_prev"></div>
+				<div class="book_carousel_outer">
+					<div class="book_preview_wrap">
+						<img class="book_miniature" src="img/book_full.jpg" alt="">	
+						<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+						<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+						<img class="book_miniature" src="img/book_preview.jpg" alt="">	
 					</div>
 				</div>
-				<div class="item_summary">
-					<div class="summary_text">Цена</div>
-					<div class="item_actions">
-						<div class="item_total">
-							<div class="sale_price">111,20 грн</div>
-							<div class="old_price">139,00 грн</div>
-						</div>
-						<div class="item_change_count">
-							<div class="item_btn item_less">-</div>
-							<div class="item_btn item_count">1</div>
-							<div class="item_btn item_more">+</div>
-						</div>
-						<div class="delete_item"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="cart_item">
-				<img class="cart_preview" src="img/book_preview.jpg" alt="">
-					<h5>Название книги</h5>
-				<div class="cart_item_info">
-					<div class="info_row">
-						<div class="book_prop">Серия</div>
-						<div class="book_val">Наборы обучающих карточек</div>
-					</div>
-					<div class="info_row">
-						<div class="book_prop">Язык</div>
-						<div class="book_val">Русский</div>
-					</div>
-
-					<div class="info_row">
-						<div class="book_prop">ISBN</div>
-						<div class="book_val">6516513135</div>
-					</div>
-				</div>
-				<div class="item_summary">
-					<div class="summary_text">Цена</div>
-					<div class="item_actions">
-						<div class="item_total">139,00 грн</div>
-						<div class="item_change_count">
-							<div class="item_btn item_less">-</div>
-							<div class="item_btn item_count">1</div>
-							<div class="item_btn item_more">+</div>
-						</div>
-						<div class="delete_item"></div>
-					</div>
-				</div>
-			</div>
-
-
-			<div class="cart_promos">
-				<div class="promocode">
-					<h5 class="promo_heading">Промокод</h5>
-					<input type="text" name="promocode">
-					<div class="promo_info">
-						<div class="promo_field">Скидка <span id="disc_applied">3%</span></div>
-						<div class="promo_value disc_sum">150 грн</div>
-					</div>
-					<div class="promo_info">
-						<div class="promo_field ">Итого</div>
-						<div class="promo_value cart_total">278 грн</div>
-					</div>
-
-					<div class="promo_info notice">
-						<div class="promo_field ">Экономия 20%</div>
-						<div class="promo_field cart_total">-28 грн</div>
-					</div>
-				</div>
-			</div>
-
-			<a class="btn btn_grad" href="checkout.html" >Оформить заказ</a>
-			<a class="btn btn_outline" href="catalog.html">Продолжить покупки</a>
-		</div>
-
-		<div class="discount_program">
-			<h3>Ваша скидка:</h3>
-			<div class="discount_info">
-				<em>3%</em> - при сумме заказа выше 250 грн 
-			</div>
-			<div class="discount_info">
-				<em>5%</em> - при сумме заказа выше 400 грн 
-			</div>
-
-			<div class="discount_info">
-				<em>7%</em> - при сумме заказа выше 800 грн 
-			</div>
-
-			<div class="discount_info">
-				<em>9%</em> - при сумме заказа выше 1200 грн 
-			</div>
-
-			<div class="discount_info">
-				<em>11%</em> - при сумме заказа выше 2000 грн 
+				<div class="miniatures_next btn_next"></div>
 			</div>
 		</div>
 
+		<div class="book_info">
+			<div class="book_name">Набор обучающих карточек</div>
+			<div class="book_short_descr">16 развивающих карточек, английские слова с транскрипцией</div>
+			<div class="rating">
+				<div class="star filled"></div>
+				<div class="star filled"></div>
+				<div class="star filled"></div>
+				<div class="star filled"></div>
+				<div class="star not_filled"></div>
+			</div>
+			<div class="price ">
+				<span class="prop_name">Цена</span>139,00 грн				
+			</div>
+
+			<div class="book_actions">
+
+				<div class="book_lang">
+					<a class="book_lang_item active" href="#">Русский</a>
+					<a class="book_lang_item" href="#">Украинский</a>
+				</div>
+				<div class="book_add">
+					<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
+					<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
+				</div>
+				
+			</div>
+
+			<div class="book_series">Серия “Книжка-пазл”</div>
+			<div class="isbn">
+				<span class="prop_name">ISBN</span> 978-5-04-113987-2
+			</div>
+			<div class="available instock">В наличии</div>
+
+			<p class="book_fulldescr">
+				Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt. 
+			</p>
+		</div>
+
+		<div class="book_tabs tabs" data-id="book_inner_tabs">
+			<div class="tabs_names">
+				<div data-id="tab_ch" class="book_inner_tabs tab_name">Характеристики</div>
+				<div data-id="tab_delivery" class="book_inner_tabs tab_name">Доставка и оплата</div>
+				<div data-id="tab_rev" class="book_inner_tabs tab_name active">Отзывы</div>
+			</div>
+
+			<div class="tabs_content">
+				<div id="tab_ch" class="tab book_inner_tabs">
+					<div class="details">
+						<div id="det_col1"  class="details_col">
+							<div class="details_row">
+								<div class="details_name">Серия:</div>
+								<div class="details_text">Наборы обучающих карточек</div>
+							</div>
+
+							<div class="details_row">
+								<div class="details_name">Кол-во страниц:</div>
+								<div class="details_text">10</div>
+							</div>
+
+							<div class="details_row">
+								<div class="details_name">Иллюстрации:</div>
+								<div class="details_text">Цветные</div>
+							</div>
+
+							<div class="details_row">
+								<div class="details_name">Бумага:</div>
+								<div class="details_text">Картон</div>
+							</div>
+
+							<div class="details_row">
+								<div class="details_name">ISBN:</div>
+								<div class="details_text">65413153548</div>
+							</div>
+
+							<div class="details_row">
+								<div class="details_name">Жанр:</div>
+								<div class="details_text">Сказки</div>
+							</div>
+
+							<div class="details_row">
+								<div class="details_name">Вид:</div>
+								<div class="details_text">Словари</div>
+							</div>
+
+							<div class="details_row">
+								<div class="details_name">Язык:</div>
+								<div class="details_text">Русский, украинский</div>
+							</div>
+
+							<div class="details_row">
+								<div class="details_name">Издательство:</div>
+								<div class="details_text">Пегас</div>
+							</div>
+
+							<div class="details_row">
+								<div class="details_name">Переплет:</div>
+								<div class="details_text">Картон</div>
+							</div>
+						</div>
+
+						<div id="det_col2" class="details_col">
+							<div class="details_row">
+								<div class="details_name">Возраст:</div>
+								<div class="details_text">5-7 лет</div>
+							</div>
+
+							<div class="details_row">
+								<div class="details_name">Вес:</div>
+								<div class="details_text">0,3</div>
+							</div>
+
+							<div class="details_row">
+								<div class="details_name">Автор:</div>
+								<div class="details_text">Иван Васильевич Пупкин</div>
+							</div>
+
+							<div class="details_row">
+								<div class="details_name">Иллюстратор:</div>
+								<div class="details_text">Иван Васильевич Пупкин</div>
+							</div>
+
+							<div class="details_row">
+								<div class="details_name">Редактор:</div>
+								<div class="details_text">Наборы обучающих карточек</div>
+							</div>
+
+							<div class="details_row">
+								<div class="details_name">Тех. редактор:</div>
+								<div class="details_text">Иван Васильевич Пупкин</div>
+							</div>
+
+							<div class="details_row">
+								<div class="details_name">Перевод:</div>
+								<div class="details_text">Русский, украинский</div>
+							</div>
+
+							<div class="details_row">
+								<div class="details_name">Под редакцией:</div>
+								<div class="details_text">Иван Васильевич Пупкин</div>
+							</div>
+
+							<div class="details_row">
+								<div class="details_name">Тематика:</div>
+								<div class="details_text">Животные</div>
+							</div>
+
+							<div class="details_row">
+								<div class="details_name">Кол-во в пачке:</div>
+								<div class="details_text">20 шт</div>
+							</div>
+						</div>	
+
+						<div class="det_actions showmobile">
+							<div class="btn_prev dc_prev inactive"></div>
+							<div class="dc_next btn_next"></div>
+						</div>	
+					</div>
+
+				</div>
+				<div id="tab_delivery" class="tab book_inner_tabs">
+					<p>Доставка по всей Украине (1-2 дня)</p>
+					<p>Оплата при получении наличными, или на расчетный счет</p>
+				</div>
+				<div id="tab_rev" class="tab book_inner_tabs active">
+					<div class="rev_carousel ">
+						<div class="btn_prev rev_prev "></div>
+					
+						<div class="review_wrap">
+							<div class="rev_content">
+								<div class="review_item">
+									<p class="review_text">
+										Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt. 
+									</p>
+
+									<div class="rev_author">
+										<div class="rev_name">Иван Иванович </div>
+										<div class="rev_date">
+											05.12.2021
+										</div>
+									</div>
+									<div class="rev_rating rating">
+										<div class="star filled"></div>
+										<div class="star filled"></div>
+										<div class="star filled"></div>
+										<div class="star filled"></div>
+										<div class="star not_filled"></div>
+									</div>
+								</div>
+
+								<div class="review_item">
+									<p class="review_text">
+										Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo.  
+									</p>
+
+									<div class="rev_author">
+										<div class="rev_name">Иван Иванович 1</div>
+										<div class="rev_date">
+											05.12.2021
+										</div>
+									</div>
+									<div class="rev_rating rating">
+										<div class="star filled"></div>
+										<div class="star filled"></div>
+										<div class="star filled"></div>
+										<div class="star filled"></div>
+										<div class="star not_filled"></div>
+									</div>
+								</div>
+
+								<div class="review_item">
+									<p class="review_text">
+										Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt. 
+									</p>
+
+									<div class="rev_author">
+										<div class="rev_name">Иван Иванович 2</div>
+										<div class="rev_date">
+											05.12.2021
+										</div>
+									</div>
+									<div class="rev_rating rating">
+										<div class="star filled"></div>
+										<div class="star filled"></div>
+										<div class="star filled"></div>
+										<div class="star filled"></div>
+										<div class="star not_filled"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="btn_next rev_next"></div>
+					</div>
+
+					<button class="view_all_rev btn btn_bordered">
+						<span>Смотреть все</span>
+					</button>
+					<button class="btn_grad btn leave_rev">Оставить отзыв</button>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<section class="book_video centered">
+		<h2>Youtube канал</h2>
+		<div class="video">
+			
+			<video class="morevid">
+				<source src="vid.mp4" type="">
+			</video>
+		</div>
 	</section>
 
 
@@ -245,8 +403,7 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
+								<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -254,6 +411,7 @@
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
 									</div>
 								</div>
+								<div class="miniatures_prev btn_prev "></div>
 								<div class="miniatures_next btn_next"></div>
 							</div>
 						</div>
@@ -300,8 +458,7 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
+								<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -309,7 +466,8 @@
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
 									</div>
 								</div>
-								<div class="miniatures_next btn_next"></div>
+								<div class="miniatures_prev btn_prev "></div>
+				<div class="miniatures_next btn_next"></div>
 							</div>
 						</div>
 
@@ -355,8 +513,7 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
+								<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -364,7 +521,8 @@
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
 									</div>
 								</div>
-								<div class="miniatures_next btn_next"></div>
+								<div class="miniatures_prev btn_prev "></div>
+				<div class="miniatures_next btn_next"></div>
 							</div>
 						</div>
 
@@ -410,8 +568,7 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
+								<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -419,7 +576,8 @@
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
 									</div>
 								</div>
-								<div class="miniatures_next btn_next"></div>
+								<div class="miniatures_prev btn_prev "></div>
+				<div class="miniatures_next btn_next"></div>
 							</div>
 						</div>
 
@@ -465,8 +623,7 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
+								<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -474,7 +631,8 @@
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
 									</div>
 								</div>
-								<div class="miniatures_next btn_next"></div>
+								<div class="miniatures_prev btn_prev "></div>
+				<div class="miniatures_next btn_next"></div>
 							</div>
 						</div>
 
@@ -520,8 +678,7 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
+								<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -529,7 +686,8 @@
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
 									</div>
 								</div>
-								<div class="miniatures_next btn_next"></div>
+								<div class="miniatures_prev btn_prev "></div>
+				<div class="miniatures_next btn_next"></div>
 							</div>
 						</div>
 
@@ -575,8 +733,7 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
+								<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -584,7 +741,8 @@
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
 									</div>
 								</div>
-								<div class="miniatures_next btn_next"></div>
+								<div class="miniatures_prev btn_prev "></div>
+				<div class="miniatures_next btn_next"></div>
 							</div>
 						</div>
 
@@ -630,8 +788,7 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
+								<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -639,7 +796,8 @@
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
 									</div>
 								</div>
-								<div class="miniatures_next btn_next"></div>
+								<div class="miniatures_prev btn_prev "></div>
+				<div class="miniatures_next btn_next"></div>
 							</div>
 						</div>
 
@@ -685,8 +843,7 @@
 							</div>
 							
 							<div class="book_pictures carousel">
-								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
+								<div class="book_carousel_outer">
 									<div class="book_preview_wrap">
 										<img class="book_miniature" src="img/book_full.jpg" alt="">	
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
@@ -694,7 +851,8 @@
 										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
 									</div>
 								</div>
-								<div class="miniatures_next btn_next"></div>
+								<div class="miniatures_prev btn_prev "></div>
+				<div class="miniatures_next btn_next"></div>
 							</div>
 						</div>
 
@@ -732,7 +890,6 @@
 			<div class="btn_next books_next"></div>
 		</div>
 	</section>
-
 
 	<section class="subscription">
 		<h2>До сих пор не подписан на нас в социальных сетях?</h2>
@@ -831,9 +988,72 @@
 		</div>
 	</div>
 
+
+
+	<!-- leave review modal -->
+
+	<div class="modal" id="leave_rev_md">
+		<div class="modal_content">
+			<div class="closebtn"></div>
+			<h2>Оставьте отзыв о книге</h2>
+			<form class="review_form">
+				
+				<div class="rev_stars">	
+					<div class="rev_star">
+						<input id="r1" type="radio" name="star_val" value="v1">
+						<label for="r1">
+							<div class="star not_filled"></div>
+							<div class="rev_descr">Плохая</div>
+						</label>
+					</div>	
+					<div class="rev_star">
+						<input id="r2" type="radio" name="star_val" value="v2">
+						<label for="r2">
+							<div class="star not_filled"></div>
+							<div class="rev_descr">Так себе</div>
+						</label>
+					</div>	
+					<div class="rev_star">
+						<input id="r3" type="radio" name="star_val" value="v3">
+						<label for="r3">
+							<div class="star not_filled"></div>
+							<div class="rev_descr">Нормальная</div>
+						</label>
+					</div>	
+					<div class="rev_star">
+						<input id="r4" type="radio" name="star_val" value="v4">
+						<label for="r4">
+							<div class="star not_filled"></div>
+							<div class="rev_descr">Хорошая</div>
+						</label>
+					</div>	
+					<div class="rev_star">
+						<input id="r5" type="radio" name="star_val" value="v5">
+						<label for="r5">
+							<div class="star not_filled"></div>
+							<div class="rev_descr">Отличная</div>
+						</label>
+					</div>
+				</div>
+				<fieldset>
+					<label>Ваши ФИО</label>
+					<input type="text" name="">
+				</fieldset>
+				<fieldset>
+					<label>Ваш отзыв</label>
+					<textarea class="rev_msg"></textarea>
+				</fieldset>
+				<button type="reset" class="reset_review btn btn_bordered"><span>Отменить</span></button>
+				<input type="submit" class="btn btn_grad" value="Оставить отзыв">
+
+			</form>
+		</div>
+	</div>
+
 	<!-- modal show book preview -->
 
 	<div id="showbook" class="modal"></div>
 	<script src="main.js"></script>
+
 </body>
 </html>

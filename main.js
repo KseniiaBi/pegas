@@ -2,7 +2,7 @@ let accordeons = document.querySelectorAll('.accordeon_item');
 let mainImg = document.querySelector('.main_img img');
 let showbookModal = document.querySelector('#showbook');
 let callBackBtn = document.querySelector('.callback');
-let callbackModal = document.querySelector('#call_me');
+let callbackModal = document.querySelector('#re-call-modal');
 let filterbtn = document.querySelector('.showfilters');
 let closeFilterBtn = document.querySelector('.closefilters');
 let filters = document.querySelector('.filter_bar');
@@ -39,10 +39,10 @@ if(filters){
 callBackBtn.onclick = () => callbackModal.style.display = 'flex';
 
 let createURL = () => {
-	let url = window.location.origin;
+	let url = window.location.origin + '/literature-catalog';
 
 	if(ageFilterStr.length > 0){
-	 url += `${ageFilterStr}/`;
+	 url += `/${ageFilterStr}/`;
 	}
 	if(genderfilterStr.length > 0){
 	 url += `${genderfilterStr}/`;
@@ -52,19 +52,19 @@ let createURL = () => {
 		url += priceFilter;
 	}
 	console.log(url);
-	// window.location.href = url;
+	window.location.href = url;
 }
 
 
 document.addEventListener('click', function(e){
 	if(e.target.classList.contains('dc_prev') && !e.target.classList.contains('inactive')){
-		detailsCol1.style.display = 'block';
+		detailsCol1.style.display = 'table';
 		detailsCol2.style.display = 'none';
 		det_nextbtn.classList.remove('inactive');
 		det_prevbtn.classList.add('inactive');
 	}
 	if(e.target.classList.contains('dc_next') && !e.target.classList.contains('inactive')){
-		detailsCol2.style.display = 'block';
+		detailsCol2.style.display = 'table';
 		detailsCol1.style.display = 'none';
 		det_nextbtn.classList.add('inactive');
 		det_prevbtn.classList.remove('inactive');
@@ -85,9 +85,13 @@ document.addEventListener('click', function(e){
 		mainImg.src = e.target.src;
 	}
 
-	// toggle visibility of filter group
+	// toggle visibility of filter group markup
 	if(e.target.classList.contains('filter_title')){
 		e.target.classList.toggle('expanded');
+	}
+	// toggle visibility of filter group production
+	if(e.target.classList.contains('title_filter')){
+		e.target.classList.toggle('collapsed');
 	}
 	// book show preview
 	if(e.target.classList.contains('book_show_preview')){
@@ -130,11 +134,15 @@ document.addEventListener('click', function(e){
 			ageFilterStr = ageFilterStr.length == 0 ?  ageFilterStr += e.target.dataset.value : ageFilterStr += '~' + e.target.dataset.value;
 		}	
 		if(e.target.parentNode.parentNode.id == 'sel_gender'){
-			genderfilterStr = genderfilterStr.length == 0 ?  genderfilterStr += e.target.dataset.value : genderfilterStr += '~' + e.target.dataset.value;
+			// genderfilterStr = genderfilterStr.length == 0 ?  genderfilterStr += e.target.dataset.value : genderfilterStr += '~' + e.target.dataset.value;
+			genderfilterStr =  e.target.dataset.value;
 		}
 	}
 	if(e.target.id == 'sel_book_btn'){
 		createURL();
+	}
+	if(e.target.classList.contains('fade') ){
+		filters.classList.remove('opened');
 	}
 	
 });
@@ -484,8 +492,115 @@ window.onload = () => {
 		}
 		menu.scrollLeft = linkOffset - 14;
 	}
+
+	let sorted = document.querySelectorAll('.sel_option');
+	if(sorted.length > 0){
+		for(let opt of sorted){
+			if(window.location.href == opt.href){
+				opt.dataset.selected = 'true';
+				let selectedOpt = opt.parentNode.parentNode.querySelector('.val_selected');
+				selectedOpt.innerText = opt.innerText;
+			}
+		}
+	}
 }
 
 	
+// reviews
 
+let rev_car = document.querySelector('.rev_carousel');
+let reviews = document.querySelectorAll('.review_item');
+let showMoreRevsBtn = document.querySelector('.view_all_rev');
+let leaveRevBtn = document.querySelector('.leave_rev');
+let leaveRevModal = document.querySelector('#leave_rev_md');
+let visibleAllRevs = false;
+let btn_txt = showMoreRevsBtn.innerText;
+	
+if(reviews.length > 0){
+	showMoreRevsBtn.onclick = () => {
+		rev_car.classList.toggle('show_all');
+		if(visibleAllRevs){
+			showMoreRevsBtn.innerText = 'По одному';
+		}
+		else{
+			showMoreRevsBtn.innerText = btn_txt;
+		}
+		visibleAllRevs = !visibleAllRevs;
+	}
+
+	leaveRevBtn.onclick = () => leaveRevModal.style.display = 'flex';
+	
+	let closeRevMdBtn = leaveRevModal.querySelector('.btn_bordered');
+	closeRevMdBtn.onclick = () => leaveRevModal.style.display = 'none';
+
+	// карусель
+
+	let reviews_prev = document.querySelector('.rev_prev');
+	let reviews_next = document.querySelector('.rev_next');
+	let reviews_wrap = document.querySelector('.rev_content');
+
+	let showingReviews = 1;
+	let reviews_transform = reviews[0].offsetWidth;
+
+	reviews_prev.onclick = reviews_showprev;
+	reviews_next.onclick = reviews_shownext;
+
+	let currentRevTr = 0;
+	let showingLastRev = false;
+	let showingFirstRev = true;
+
+	function checkRevArrows(){
+		if(currentRevTr == -1*reviews_transform*(reviews.length-showingReviews)){
+			showingLastRev = true;
+			showingFirstRev = false;
+			reviews_next.classList.add('inactive');
+			reviews_prev.classList.remove('inactive');
+		}
+		else if(currentRevTr == 0){
+			showingLastRev = false;
+			showingFirstRev = true;
+			reviews_prev.classList.add('inactive');
+			reviews_next.classList.remove('inactive');
+		}
+		else{
+			showingLastRev = false;
+			showingFirstRev = false;
+			reviews_next.classList.remove('inactive');
+			reviews_prev.classList.remove('inactive');
+		}
+	}
+
+	function reviews_shownext(){
+		if(!showingLastRev){
+			currentRevTr -= reviews_transform;
+			reviews_wrap.style.transform = `translateX(${currentRevTr}px)`;
+			checkRevArrows();
+		}
+	}
+
+	function reviews_showprev(){
+		if(!showingFirstRev){
+			currentRevTr += reviews_transform;
+			reviews_wrap.style.transform = `translateX(${currentRevTr}px)`;
+			checkRevArrows();
+		}
+	}
+
+	// закрашивание звезд
+	let rev_stars = document.querySelectorAll('.rev_star');
+
+	for(let i = 0; i < rev_stars.length; i++){
+		rev_stars[i].onclick = () => {
+			let starnum = i;
+			for(let j = 0; j < rev_stars.length; j++){
+				let st = rev_stars[j].querySelector('.star');
+					st.classList.add('not_filled');
+				if(j <= i){
+					st.classList.remove('not_filled');
+					st.classList.add('filled');
+				}			
+			}
+		}
+	}
+}
 
