@@ -15,10 +15,43 @@
 		<div class="header_top">
 			<nav class="topnav">
 				<a class="h_top_link" href="#">Издательство ПЕГАС</a>
-				<a class="h_top_link has_inner" href="#">Блог</a>
+				<a class="h_top_link " href="#">Блог</a>
 				<a class="h_top_link" href="#">Сотрудничество</a>
 				<a class="h_top_link" href="#">Доставка и оплата</a>
 				<a class="h_top_link" href="#">Контакты</a>
+				<div class="top_acc">
+					<div class="h_top_link has_inner">Личный кабинет</div>
+					<div class="top_acc_submenu">
+						<a href="#" class="user_link">
+							<img src="img/account.svg">
+							Личные данные
+						</a>
+						<a href="#" class="user_link">
+							<img src="img/list.svg">
+							Мои заказы
+						</a>
+						<a href="#" class="user_link">
+							<img src="img/heart.svg">
+							Закладки
+						</a>
+						<a href="#" class="user_link">
+							<img src="img/my_rev.svg">
+							Мои отзывы
+						</a>
+						<a href="#" class="user_link">
+							<img src="img/notifications.svg">
+							Подписка на рассылку
+						</a>
+						<a href="#" class="user_link">
+							<img src="img/adress.svg">
+							Адресная книга
+						</a>
+						<a href="#" class="user_link">
+							<img src="img/logout.svg">
+							Выйти из аккаунта
+						</a>
+					</div>
+				</div>
 			</nav>
 			<div class="top_right">
 				<div class="lang_wrap">
@@ -214,116 +247,35 @@
 							<div class="main_img">
 								<img src="img/book_full.jpg" alt="">
 								<div class="book_show">	
-									<button class="book_show_preview btn btn_grad">Предпросмотр</button>
+									<button data-id="1370" class="book_show_preview btn btn_grad">Предпросмотр</button>
 								</div>
 							</div>
 							
-							<div class="book_pictures carousel">
-								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
-									<div class="book_preview_wrap">
-										<img class="book_miniature" src="img/book_full.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-									</div>
-								</div>
-								<div class="miniatures_next btn_next"></div>
-							</div>
+							
 						</div>
 
 						<div class="book_info">
 							<h4>Набор обучающих карточек</h4>
-							<div class="book_series">Серия “Книжка-пазл”</div>
-							<div class="rating">
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star not_filled"></div>
-							</div>
-							<div class="price sale">
-							<div class="price_old">
-								<div class="full_price"><span class="prop_name">Цена</span><span class="line_trough"> 139,00</span> грн</div>
-								<div class="disc_amount">Скидка 20%</div>
-							</div>
-							<div class="price_new">111,20 грн</div>
-						</div>
-							<div class="isbn">
-								<span class="prop_name">ISBN</span> 978-5-04-113987-2
-							</div>
-							<div class="available instock">В наличии</div>
-							<div class="book_actions">
-								<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
-								<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
-							</div>
-
-							<p class="book_fulldescr"> 
-								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
-								Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
-							</p>
-
-							<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
-						</div>
-					</div>
-				</div>
-				<div class="book_item">
-					<div class="book_inner ">
-						<div class="closebtn"></div>
-						<div class="book_preview">
-							<div class="main_img">
-								<img src="img/book_full.jpg" alt="">
-								<div class="book_show">	
-									<button class="book_show_preview btn btn_grad">Предпросмотр</button>
-								</div>
-							</div>
-							
-							<div class="book_pictures carousel">
-								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
-									<div class="book_preview_wrap">
-										<img class="book_miniature" src="img/book_full.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+								
+								<div class="price sale">
+									<span class="prop_name">Цена</span>
+									<div class="price_new">111,20 грн</div>
+									<div class="price_old">
+										<div class="full_price"><span class="line_trough"> 139,00 грн</span> </div>
+										<div class="disc_amount">Скидка 20%</div>
 									</div>
 								</div>
-								<div class="miniatures_next btn_next"></div>
-							</div>
-						</div>
+								
+								<div class="book_actions">
+									<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
+									<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
+								</div>
+									
 
-						<div class="book_info">
-							<h4>Набор обучающих карточек</h4>
-							<div class="book_series">Серия “Книжка-пазл”</div>
-							<div class="rating">
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star not_filled"></div>
-							</div>
-							<div class="price sale">
-							<div class="price_old">
-								<div class="full_price"><span class="prop_name">Цена</span><span class="line_trough"> 139,00</span> грн</div>
-								<div class="disc_amount">Скидка 20%</div>
-							</div>
-							<div class="price_new">111,20 грн</div>
-						</div>
-							<div class="isbn">
-								<span class="prop_name">ISBN</span> 978-5-04-113987-2
-							</div>
-							<div class="available instock">В наличии</div>
-							<div class="book_actions">
-								<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
-								<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
-							</div>
+								<div class="book_series">Серия “Книжка-пазл”</div>
+							
+								<div class="available instock">В наличии</div>
 
-							<p class="book_fulldescr"> 
-								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
-								Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
-							</p>
-
-							<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
 						</div>
 					</div>
 				</div>
@@ -341,48 +293,55 @@
 							
 							<div class="book_pictures carousel">
 								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
-									<div class="book_preview_wrap">
-										<img class="book_miniature" src="img/book_full.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<div class="book_carousel_outer">
+										<div class="book_preview_wrap">
+											<img class="book_miniature" src="img/book_full.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+										</div>
 									</div>
-								</div>
 								<div class="miniatures_next btn_next"></div>
 							</div>
 						</div>
 
 						<div class="book_info">
 							<h4>Набор обучающих карточек</h4>
-							<div class="book_series">Серия “Книжка-пазл”</div>
-							<div class="rating">
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star not_filled"></div>
-							</div>
-							<div class="price sale">
-							<div class="price_old">
-								<div class="full_price"><span class="prop_name">Цена</span><span class="line_trough"> 139,00</span> грн</div>
-								<div class="disc_amount">Скидка 20%</div>
-							</div>
-							<div class="price_new">111,20 грн</div>
-						</div>
-							<div class="isbn">
-								<span class="prop_name">ISBN</span> 978-5-04-113987-2
-							</div>
-							<div class="available instock">В наличии</div>
-							<div class="book_actions">
-								<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
-								<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
-							</div>
+								<div class="rating">
+									<div class="star filled"></div>
+									<div class="star filled"></div>
+									<div class="star filled"></div>
+									<div class="star filled"></div>
+									<div class="star not_filled"></div>
+								</div>
+								<div class="price sale">
+									<span class="prop_name">Цена</span>
+									<div class="price_new">111,20 грн</div>
+									<div class="price_old">
+										<div class="full_price"><span class="line_trough"> 139,00 грн</span> </div>
+										<div class="disc_amount">Скидка 20%</div>
+									</div>
+								</div>
+								
+								<div class="book_lang">
+									<a class="book_lang_item active" href="#">Русский</a>
+									<a class="book_lang_item" href="#">Украинский</a>
+								</div>
+								<div class="book_actions">
+									<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
+									<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
+								</div>
+									
 
-							<p class="book_fulldescr"> 
-								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
-								Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
-							</p>
+								<div class="book_series">Серия “Книжка-пазл”</div>
+								<div class="isbn">
+									<span class="prop_name">ISBN</span> 978-5-04-113987-2
+								</div>
+								<div class="available instock">В наличии</div>
+
+								<p class="book_fulldescr">
+									Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt. 
+								</p>
 
 							<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
 						</div>
@@ -402,54 +361,60 @@
 							
 							<div class="book_pictures carousel">
 								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
-									<div class="book_preview_wrap">
-										<img class="book_miniature" src="img/book_full.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<div class="book_carousel_outer">
+										<div class="book_preview_wrap">
+											<img class="book_miniature" src="img/book_full.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+										</div>
 									</div>
-								</div>
 								<div class="miniatures_next btn_next"></div>
 							</div>
 						</div>
 
 						<div class="book_info">
 							<h4>Набор обучающих карточек</h4>
-							<div class="book_series">Серия “Книжка-пазл”</div>
-							<div class="rating">
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star not_filled"></div>
-							</div>
-							<div class="price sale">
-							<div class="price_old">
-								<div class="full_price"><span class="prop_name">Цена</span><span class="line_trough"> 139,00</span> грн</div>
-								<div class="disc_amount">Скидка 20%</div>
-							</div>
-							<div class="price_new">111,20 грн</div>
-						</div>
-							<div class="isbn">
-								<span class="prop_name">ISBN</span> 978-5-04-113987-2
-							</div>
-							<div class="available instock">В наличии</div>
-							<div class="book_actions">
-								<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
-								<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
-							</div>
+								<div class="rating">
+									<div class="star filled"></div>
+									<div class="star filled"></div>
+									<div class="star filled"></div>
+									<div class="star filled"></div>
+									<div class="star not_filled"></div>
+								</div>
+								<div class="price sale">
+									<span class="prop_name">Цена</span>
+									<div class="price_new">111,20 грн</div>
+									<div class="price_old">
+										<div class="full_price"><span class="line_trough"> 139,00 грн</span> </div>
+										<div class="disc_amount">Скидка 20%</div>
+									</div>
+								</div>
+								
+								<div class="book_lang">
+									<a class="book_lang_item active" href="#">Русский</a>
+									<a class="book_lang_item" href="#">Украинский</a>
+								</div>
+								<div class="book_actions">
+									<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
+									<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
+								</div>
+									
 
-							<p class="book_fulldescr"> 
-								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
-								Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
-							</p>
+								<div class="book_series">Серия “Книжка-пазл”</div>
+								<div class="isbn">
+									<span class="prop_name">ISBN</span> 978-5-04-113987-2
+								</div>
+								<div class="available instock">В наличии</div>
+
+								<p class="book_fulldescr">
+									Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt. 
+								</p>
 
 							<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
 						</div>
 					</div>
 				</div>
-
 				<div class="book_item">
 					<div class="book_inner ">
 						<div class="closebtn"></div>
@@ -463,54 +428,60 @@
 							
 							<div class="book_pictures carousel">
 								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
-									<div class="book_preview_wrap">
-										<img class="book_miniature" src="img/book_full.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<div class="book_carousel_outer">
+										<div class="book_preview_wrap">
+											<img class="book_miniature" src="img/book_full.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+										</div>
 									</div>
-								</div>
 								<div class="miniatures_next btn_next"></div>
 							</div>
 						</div>
 
 						<div class="book_info">
 							<h4>Набор обучающих карточек</h4>
-							<div class="book_series">Серия “Книжка-пазл”</div>
-							<div class="rating">
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star not_filled"></div>
-							</div>
-							<div class="price sale">
-							<div class="price_old">
-								<div class="full_price"><span class="prop_name">Цена</span><span class="line_trough"> 139,00</span> грн</div>
-								<div class="disc_amount">Скидка 20%</div>
-							</div>
-							<div class="price_new">111,20 грн</div>
-						</div>
-							<div class="isbn">
-								<span class="prop_name">ISBN</span> 978-5-04-113987-2
-							</div>
-							<div class="available instock">В наличии</div>
-							<div class="book_actions">
-								<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
-								<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
-							</div>
+								<div class="rating">
+									<div class="star filled"></div>
+									<div class="star filled"></div>
+									<div class="star filled"></div>
+									<div class="star filled"></div>
+									<div class="star not_filled"></div>
+								</div>
+								<div class="price sale">
+									<span class="prop_name">Цена</span>
+									<div class="price_new">111,20 грн</div>
+									<div class="price_old">
+										<div class="full_price"><span class="line_trough"> 139,00 грн</span> </div>
+										<div class="disc_amount">Скидка 20%</div>
+									</div>
+								</div>
+								
+								<div class="book_lang">
+									<a class="book_lang_item active" href="#">Русский</a>
+									<a class="book_lang_item" href="#">Украинский</a>
+								</div>
+								<div class="book_actions">
+									<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
+									<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
+								</div>
+									
 
-							<p class="book_fulldescr"> 
-								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
-								Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
-							</p>
+								<div class="book_series">Серия “Книжка-пазл”</div>
+								<div class="isbn">
+									<span class="prop_name">ISBN</span> 978-5-04-113987-2
+								</div>
+								<div class="available instock">В наличии</div>
+
+								<p class="book_fulldescr">
+									Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt. 
+								</p>
 
 							<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
 						</div>
 					</div>
 				</div>
-
 				<div class="book_item">
 					<div class="book_inner ">
 						<div class="closebtn"></div>
@@ -524,54 +495,60 @@
 							
 							<div class="book_pictures carousel">
 								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
-									<div class="book_preview_wrap">
-										<img class="book_miniature" src="img/book_full.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<div class="book_carousel_outer">
+										<div class="book_preview_wrap">
+											<img class="book_miniature" src="img/book_full.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+										</div>
 									</div>
-								</div>
 								<div class="miniatures_next btn_next"></div>
 							</div>
 						</div>
 
 						<div class="book_info">
 							<h4>Набор обучающих карточек</h4>
-							<div class="book_series">Серия “Книжка-пазл”</div>
-							<div class="rating">
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star not_filled"></div>
-							</div>
-							<div class="price sale">
-							<div class="price_old">
-								<div class="full_price"><span class="prop_name">Цена</span><span class="line_trough"> 139,00</span> грн</div>
-								<div class="disc_amount">Скидка 20%</div>
-							</div>
-							<div class="price_new">111,20 грн</div>
-						</div>
-							<div class="isbn">
-								<span class="prop_name">ISBN</span> 978-5-04-113987-2
-							</div>
-							<div class="available instock">В наличии</div>
-							<div class="book_actions">
-								<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
-								<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
-							</div>
+								<div class="rating">
+									<div class="star filled"></div>
+									<div class="star filled"></div>
+									<div class="star filled"></div>
+									<div class="star filled"></div>
+									<div class="star not_filled"></div>
+								</div>
+								<div class="price sale">
+									<span class="prop_name">Цена</span>
+									<div class="price_new">111,20 грн</div>
+									<div class="price_old">
+										<div class="full_price"><span class="line_trough"> 139,00 грн</span> </div>
+										<div class="disc_amount">Скидка 20%</div>
+									</div>
+								</div>
+								
+								<div class="book_lang">
+									<a class="book_lang_item active" href="#">Русский</a>
+									<a class="book_lang_item" href="#">Украинский</a>
+								</div>
+								<div class="book_actions">
+									<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
+									<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
+								</div>
+									
 
-							<p class="book_fulldescr"> 
-								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
-								Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
-							</p>
+								<div class="book_series">Серия “Книжка-пазл”</div>
+								<div class="isbn">
+									<span class="prop_name">ISBN</span> 978-5-04-113987-2
+								</div>
+								<div class="available instock">В наличии</div>
+
+								<p class="book_fulldescr">
+									Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt. 
+								</p>
 
 							<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
 						</div>
 					</div>
 				</div>
-
 				<div class="book_item">
 					<div class="book_inner ">
 						<div class="closebtn"></div>
@@ -585,114 +562,61 @@
 							
 							<div class="book_pictures carousel">
 								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
-									<div class="book_preview_wrap">
-										<img class="book_miniature" src="img/book_full.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<div class="book_carousel_outer">
+										<div class="book_preview_wrap">
+											<img class="book_miniature" src="img/book_full.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+										</div>
 									</div>
-								</div>
 								<div class="miniatures_next btn_next"></div>
 							</div>
 						</div>
 
 						<div class="book_info">
 							<h4>Набор обучающих карточек</h4>
-							<div class="book_series">Серия “Книжка-пазл”</div>
-							<div class="rating">
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star not_filled"></div>
-							</div>
-							<div class="price sale">
-							<div class="price_old">
-								<div class="full_price"><span class="prop_name">Цена</span><span class="line_trough"> 139,00</span> грн</div>
-								<div class="disc_amount">Скидка 20%</div>
-							</div>
-							<div class="price_new">111,20 грн</div>
-						</div>
-							<div class="isbn">
-								<span class="prop_name">ISBN</span> 978-5-04-113987-2
-							</div>
-							<div class="available instock">В наличии</div>
-							<div class="book_actions">
-								<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
-								<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
-							</div>
-
-							<p class="book_fulldescr"> 
-								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
-								Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
-							</p>
-
-							<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
-						</div>
-					</div>
-				</div>
-
-				<div class="book_item">
-					<div class="book_inner ">
-						<div class="closebtn"></div>
-						<div class="book_preview">
-							<div class="main_img">
-								<img src="img/book_full.jpg" alt="">
-								<div class="book_show">	
-									<button class="book_show_preview btn btn_grad">Предпросмотр</button>
+								<div class="rating">
+									<div class="star filled"></div>
+									<div class="star filled"></div>
+									<div class="star filled"></div>
+									<div class="star filled"></div>
+									<div class="star not_filled"></div>
 								</div>
-							</div>
-							
-							<div class="book_pictures carousel">
-								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
-									<div class="book_preview_wrap">
-										<img class="book_miniature" src="img/book_full.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+								<div class="price sale">
+									<span class="prop_name">Цена</span>
+									<div class="price_new">111,20 грн</div>
+									<div class="price_old">
+										<div class="full_price"><span class="line_trough"> 139,00 грн</span> </div>
+										<div class="disc_amount">Скидка 20%</div>
 									</div>
 								</div>
-								<div class="miniatures_next btn_next"></div>
-							</div>
-						</div>
+								
+								<div class="book_lang">
+									<a class="book_lang_item active" href="#">Русский</a>
+									<a class="book_lang_item" href="#">Украинский</a>
+								</div>
+								<div class="book_actions">
+									<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
+									<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
+								</div>
+									
 
-						<div class="book_info">
-							<h4>Набор обучающих карточек</h4>
-							<div class="book_series">Серия “Книжка-пазл”</div>
-							<div class="rating">
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star not_filled"></div>
-							</div>
-							<div class="price sale">
-							<div class="price_old">
-								<div class="full_price"><span class="prop_name">Цена</span><span class="line_trough"> 139,00</span> грн</div>
-								<div class="disc_amount">Скидка 20%</div>
-							</div>
-							<div class="price_new">111,20 грн</div>
-						</div>
-							<div class="isbn">
-								<span class="prop_name">ISBN</span> 978-5-04-113987-2
-							</div>
-							<div class="available instock">В наличии</div>
-							<div class="book_actions">
-								<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
-								<div class="btn btn_bordered like"><img src="img/heart_bordered.svg" alt=""></div>
-							</div>
+								<div class="book_series">Серия “Книжка-пазл”</div>
+								<div class="isbn">
+									<span class="prop_name">ISBN</span> 978-5-04-113987-2
+								</div>
+								<div class="available instock">В наличии</div>
 
-							<p class="book_fulldescr"> 
-								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
-								Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
-							</p>
+								<p class="book_fulldescr">
+									Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt. 
+								</p>
 
 							<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
 						</div>
 					</div>
 				</div>
+
 			</div>
 			<div class="mask_next"></div>
 			<div class="btn_next books_next"></div>
@@ -709,7 +633,7 @@
 			<div class="books_wrap">
 				
 				<div class="book_item">
-					<div class="book_inner outofstock">
+					<div class="book_inner ">
 						<div class="closebtn"></div>
 						<div class="book_preview">
 							<div class="main_img">
@@ -721,21 +645,20 @@
 							
 							<div class="book_pictures carousel">
 								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
-									<div class="book_preview_wrap">
-										<img class="book_miniature" src="img/book_full.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<div class="book_carousel_outer">
+										<div class="book_preview_wrap">
+											<img class="book_miniature" src="img/book_full.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+										</div>
 									</div>
-								</div>
 								<div class="miniatures_next btn_next"></div>
 							</div>
 						</div>
 
 						<div class="book_info">
 							<h4>Набор обучающих карточек</h4>
-							<div class="book_series">Серия “Книжка-пазл”</div>
 							<div class="rating">
 								<div class="star filled"></div>
 								<div class="star filled"></div>
@@ -743,19 +666,29 @@
 								<div class="star filled"></div>
 								<div class="star not_filled"></div>
 							</div>
-							<div class="price "> <span class="prop_name">Цена</span> 139,00 грн</div>
-							<div class="isbn">
-								<span class="prop_name">ISBN</span> 978-5-04-113987-2
+							<div class="price ">
+								<span class="prop_name">Цена</span>139,00 грн				
 							</div>
-							<div class="available outofstock">Нет в наличии</div>
+
+
+							<div class="book_lang">
+								<a class="book_lang_item active" href="#">Русский</a>
+								<a class="book_lang_item" href="#">Украинский</a>
+							</div>
 							<div class="book_actions">
 								<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
 								<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
 							</div>
+								
 
-							<p class="book_fulldescr"> 
-								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
-								Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
+							<div class="book_series">Серия “Книжка-пазл”</div>
+							<div class="isbn">
+								<span class="prop_name">ISBN</span> 978-5-04-113987-2
+							</div>
+							<div class="available instock">В наличии</div>
+
+							<p class="book_fulldescr">
+								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt. 
 							</p>
 
 							<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
@@ -776,21 +709,20 @@
 							
 							<div class="book_pictures carousel">
 								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
-									<div class="book_preview_wrap">
-										<img class="book_miniature" src="img/book_full.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<div class="book_carousel_outer">
+										<div class="book_preview_wrap">
+											<img class="book_miniature" src="img/book_full.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+										</div>
 									</div>
-								</div>
 								<div class="miniatures_next btn_next"></div>
 							</div>
 						</div>
 
 						<div class="book_info">
 							<h4>Набор обучающих карточек</h4>
-							<div class="book_series">Серия “Книжка-пазл”</div>
 							<div class="rating">
 								<div class="star filled"></div>
 								<div class="star filled"></div>
@@ -798,26 +730,35 @@
 								<div class="star filled"></div>
 								<div class="star not_filled"></div>
 							</div>
-							<div class="price "> <span class="prop_name">Цена</span> 139,00 грн</div>
-							<div class="isbn">
-								<span class="prop_name">ISBN</span> 978-5-04-113987-2
+							<div class="price ">
+								<span class="prop_name">Цена</span>139,00 грн				
 							</div>
-							<div class="available instock">В наличии</div>
+
+
+							<div class="book_lang">
+								<a class="book_lang_item active" href="#">Русский</a>
+								<a class="book_lang_item" href="#">Украинский</a>
+							</div>
 							<div class="book_actions">
 								<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
 								<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
 							</div>
+								
 
-							<p class="book_fulldescr"> 
-								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
-								Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
+							<div class="book_series">Серия “Книжка-пазл”</div>
+							<div class="isbn">
+								<span class="prop_name">ISBN</span> 978-5-04-113987-2
+							</div>
+							<div class="available instock">В наличии</div>
+
+							<p class="book_fulldescr">
+								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt. 
 							</p>
 
 							<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
 						</div>
 					</div>
 				</div>
-
 				<div class="book_item">
 					<div class="book_inner ">
 						<div class="closebtn"></div>
@@ -831,21 +772,20 @@
 							
 							<div class="book_pictures carousel">
 								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
-									<div class="book_preview_wrap">
-										<img class="book_miniature" src="img/book_full.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<div class="book_carousel_outer">
+										<div class="book_preview_wrap">
+											<img class="book_miniature" src="img/book_full.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+										</div>
 									</div>
-								</div>
 								<div class="miniatures_next btn_next"></div>
 							</div>
 						</div>
 
 						<div class="book_info">
 							<h4>Набор обучающих карточек</h4>
-							<div class="book_series">Серия “Книжка-пазл”</div>
 							<div class="rating">
 								<div class="star filled"></div>
 								<div class="star filled"></div>
@@ -853,26 +793,35 @@
 								<div class="star filled"></div>
 								<div class="star not_filled"></div>
 							</div>
-							<div class="price "> <span class="prop_name">Цена</span> 139,00 грн</div>
-							<div class="isbn">
-								<span class="prop_name">ISBN</span> 978-5-04-113987-2
+							<div class="price ">
+								<span class="prop_name">Цена</span>139,00 грн				
 							</div>
-							<div class="available instock">В наличии</div>
+
+
+							<div class="book_lang">
+								<a class="book_lang_item active" href="#">Русский</a>
+								<a class="book_lang_item" href="#">Украинский</a>
+							</div>
 							<div class="book_actions">
 								<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
 								<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
 							</div>
+								
 
-							<p class="book_fulldescr"> 
-								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
-								Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
+							<div class="book_series">Серия “Книжка-пазл”</div>
+							<div class="isbn">
+								<span class="prop_name">ISBN</span> 978-5-04-113987-2
+							</div>
+							<div class="available instock">В наличии</div>
+
+							<p class="book_fulldescr">
+								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt. 
 							</p>
 
 							<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
 						</div>
 					</div>
 				</div>
-
 				<div class="book_item">
 					<div class="book_inner ">
 						<div class="closebtn"></div>
@@ -886,21 +835,20 @@
 							
 							<div class="book_pictures carousel">
 								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
-									<div class="book_preview_wrap">
-										<img class="book_miniature" src="img/book_full.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<div class="book_carousel_outer">
+										<div class="book_preview_wrap">
+											<img class="book_miniature" src="img/book_full.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+										</div>
 									</div>
-								</div>
 								<div class="miniatures_next btn_next"></div>
 							</div>
 						</div>
 
 						<div class="book_info">
 							<h4>Набор обучающих карточек</h4>
-							<div class="book_series">Серия “Книжка-пазл”</div>
 							<div class="rating">
 								<div class="star filled"></div>
 								<div class="star filled"></div>
@@ -908,26 +856,35 @@
 								<div class="star filled"></div>
 								<div class="star not_filled"></div>
 							</div>
-							<div class="price "> <span class="prop_name">Цена</span> 139,00 грн</div>
-							<div class="isbn">
-								<span class="prop_name">ISBN</span> 978-5-04-113987-2
+							<div class="price ">
+								<span class="prop_name">Цена</span>139,00 грн				
 							</div>
-							<div class="available instock">В наличии</div>
+
+
+							<div class="book_lang">
+								<a class="book_lang_item active" href="#">Русский</a>
+								<a class="book_lang_item" href="#">Украинский</a>
+							</div>
 							<div class="book_actions">
 								<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
 								<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
 							</div>
+								
 
-							<p class="book_fulldescr"> 
-								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
-								Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
+							<div class="book_series">Серия “Книжка-пазл”</div>
+							<div class="isbn">
+								<span class="prop_name">ISBN</span> 978-5-04-113987-2
+							</div>
+							<div class="available instock">В наличии</div>
+
+							<p class="book_fulldescr">
+								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt. 
 							</p>
 
 							<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
 						</div>
 					</div>
 				</div>
-
 				<div class="book_item">
 					<div class="book_inner ">
 						<div class="closebtn"></div>
@@ -941,21 +898,20 @@
 							
 							<div class="book_pictures carousel">
 								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
-									<div class="book_preview_wrap">
-										<img class="book_miniature" src="img/book_full.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<div class="book_carousel_outer">
+										<div class="book_preview_wrap">
+											<img class="book_miniature" src="img/book_full.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+										</div>
 									</div>
-								</div>
 								<div class="miniatures_next btn_next"></div>
 							</div>
 						</div>
 
 						<div class="book_info">
 							<h4>Набор обучающих карточек</h4>
-							<div class="book_series">Серия “Книжка-пазл”</div>
 							<div class="rating">
 								<div class="star filled"></div>
 								<div class="star filled"></div>
@@ -963,26 +919,35 @@
 								<div class="star filled"></div>
 								<div class="star not_filled"></div>
 							</div>
-							<div class="price "> <span class="prop_name">Цена</span> 139,00 грн</div>
-							<div class="isbn">
-								<span class="prop_name">ISBN</span> 978-5-04-113987-2
+							<div class="price ">
+								<span class="prop_name">Цена</span>139,00 грн				
 							</div>
-							<div class="available instock">В наличии</div>
+
+
+							<div class="book_lang">
+								<a class="book_lang_item active" href="#">Русский</a>
+								<a class="book_lang_item" href="#">Украинский</a>
+							</div>
 							<div class="book_actions">
 								<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
 								<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
 							</div>
+								
 
-							<p class="book_fulldescr"> 
-								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
-								Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
+							<div class="book_series">Серия “Книжка-пазл”</div>
+							<div class="isbn">
+								<span class="prop_name">ISBN</span> 978-5-04-113987-2
+							</div>
+							<div class="available instock">В наличии</div>
+
+							<p class="book_fulldescr">
+								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt. 
 							</p>
 
 							<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
 						</div>
 					</div>
 				</div>
-
 				<div class="book_item">
 					<div class="book_inner ">
 						<div class="closebtn"></div>
@@ -996,21 +961,20 @@
 							
 							<div class="book_pictures carousel">
 								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
-									<div class="book_preview_wrap">
-										<img class="book_miniature" src="img/book_full.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<div class="book_carousel_outer">
+										<div class="book_preview_wrap">
+											<img class="book_miniature" src="img/book_full.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+										</div>
 									</div>
-								</div>
 								<div class="miniatures_next btn_next"></div>
 							</div>
 						</div>
 
 						<div class="book_info">
 							<h4>Набор обучающих карточек</h4>
-							<div class="book_series">Серия “Книжка-пазл”</div>
 							<div class="rating">
 								<div class="star filled"></div>
 								<div class="star filled"></div>
@@ -1018,26 +982,35 @@
 								<div class="star filled"></div>
 								<div class="star not_filled"></div>
 							</div>
-							<div class="price "> <span class="prop_name">Цена</span> 139,00 грн</div>
-							<div class="isbn">
-								<span class="prop_name">ISBN</span> 978-5-04-113987-2
+							<div class="price ">
+								<span class="prop_name">Цена</span>139,00 грн				
 							</div>
-							<div class="available instock">В наличии</div>
+
+
+							<div class="book_lang">
+								<a class="book_lang_item active" href="#">Русский</a>
+								<a class="book_lang_item" href="#">Украинский</a>
+							</div>
 							<div class="book_actions">
 								<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
 								<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
 							</div>
+								
 
-							<p class="book_fulldescr"> 
-								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
-								Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
+							<div class="book_series">Серия “Книжка-пазл”</div>
+							<div class="isbn">
+								<span class="prop_name">ISBN</span> 978-5-04-113987-2
+							</div>
+							<div class="available instock">В наличии</div>
+
+							<p class="book_fulldescr">
+								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt. 
 							</p>
 
 							<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
 						</div>
 					</div>
 				</div>
-
 				<div class="book_item">
 					<div class="book_inner ">
 						<div class="closebtn"></div>
@@ -1051,21 +1024,20 @@
 							
 							<div class="book_pictures carousel">
 								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
-									<div class="book_preview_wrap">
-										<img class="book_miniature" src="img/book_full.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<div class="book_carousel_outer">
+										<div class="book_preview_wrap">
+											<img class="book_miniature" src="img/book_full.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+										</div>
 									</div>
-								</div>
 								<div class="miniatures_next btn_next"></div>
 							</div>
 						</div>
 
 						<div class="book_info">
 							<h4>Набор обучающих карточек</h4>
-							<div class="book_series">Серия “Книжка-пазл”</div>
 							<div class="rating">
 								<div class="star filled"></div>
 								<div class="star filled"></div>
@@ -1073,129 +1045,29 @@
 								<div class="star filled"></div>
 								<div class="star not_filled"></div>
 							</div>
-							<div class="price "> <span class="prop_name">Цена</span> 139,00 грн</div>
-							<div class="isbn">
-								<span class="prop_name">ISBN</span> 978-5-04-113987-2
+							<div class="price ">
+								<span class="prop_name">Цена</span>139,00 грн				
 							</div>
-							<div class="available instock">В наличии</div>
+
+
+							<div class="book_lang">
+								<a class="book_lang_item active" href="#">Русский</a>
+								<a class="book_lang_item" href="#">Украинский</a>
+							</div>
 							<div class="book_actions">
 								<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
 								<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
 							</div>
+								
 
-							<p class="book_fulldescr"> 
-								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
-								Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
-							</p>
-
-							<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
-						</div>
-					</div>
-				</div>
-
-				<div class="book_item">
-					<div class="book_inner ">
-						<div class="closebtn"></div>
-						<div class="book_preview">
-							<div class="main_img">
-								<img src="img/book_full.jpg" alt="">
-								<div class="book_show">	
-									<button class="book_show_preview btn btn_grad">Предпросмотр</button>
-								</div>
-							</div>
-							
-							<div class="book_pictures carousel">
-								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
-									<div class="book_preview_wrap">
-										<img class="book_miniature" src="img/book_full.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-									</div>
-								</div>
-								<div class="miniatures_next btn_next"></div>
-							</div>
-						</div>
-
-						<div class="book_info">
-							<h4>Набор обучающих карточек</h4>
 							<div class="book_series">Серия “Книжка-пазл”</div>
-							<div class="rating">
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star not_filled"></div>
-							</div>
-							<div class="price "> <span class="prop_name">Цена</span> 139,00 грн</div>
 							<div class="isbn">
 								<span class="prop_name">ISBN</span> 978-5-04-113987-2
 							</div>
 							<div class="available instock">В наличии</div>
-							<div class="book_actions">
-								<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
-								<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
-							</div>
 
-							<p class="book_fulldescr"> 
-								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
-								Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
-							</p>
-
-							<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
-						</div>
-					</div>
-				</div>
-
-				<div class="book_item">
-					<div class="book_inner ">
-						<div class="closebtn"></div>
-						<div class="book_preview">
-							<div class="main_img">
-								<img src="img/book_full.jpg" alt="">
-								<div class="book_show">	
-									<button class="book_show_preview btn btn_grad">Предпросмотр</button>
-								</div>
-							</div>
-							
-							<div class="book_pictures carousel">
-								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
-									<div class="book_preview_wrap">
-										<img class="book_miniature" src="img/book_full.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-									</div>
-								</div>
-								<div class="miniatures_next btn_next"></div>
-							</div>
-						</div>
-
-						<div class="book_info">
-							<h4>Набор обучающих карточек</h4>
-							<div class="book_series">Серия “Книжка-пазл”</div>
-							<div class="rating">
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star not_filled"></div>
-							</div>
-							<div class="price "> <span class="prop_name">Цена</span> 139,00 грн</div>
-							<div class="isbn">
-								<span class="prop_name">ISBN</span> 978-5-04-113987-2
-							</div>
-							<div class="available instock">В наличии</div>
-							<div class="book_actions">
-								<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
-								<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
-							</div>
-
-							<p class="book_fulldescr"> 
-								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
-								Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
+							<p class="book_fulldescr">
+								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt. 
 							</p>
 
 							<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
@@ -1217,7 +1089,7 @@
 			<div class="btn_prev books_prev invisible"></div>
 			<div class="books_wrap">
 				
-				<div class="book_item">
+				<div class="book_item outofstock">
 					<div class="book_inner ">
 						<div class="closebtn"></div>
 						<div class="book_preview">
@@ -1230,21 +1102,20 @@
 							
 							<div class="book_pictures carousel">
 								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
-									<div class="book_preview_wrap">
-										<img class="book_miniature" src="img/book_full.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<div class="book_carousel_outer">
+										<div class="book_preview_wrap">
+											<img class="book_miniature" src="img/book_full.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+										</div>
 									</div>
-								</div>
 								<div class="miniatures_next btn_next"></div>
 							</div>
 						</div>
 
 						<div class="book_info">
 							<h4>Набор обучающих карточек</h4>
-							<div class="book_series">Серия “Книжка-пазл”</div>
 							<div class="rating">
 								<div class="star filled"></div>
 								<div class="star filled"></div>
@@ -1252,19 +1123,29 @@
 								<div class="star filled"></div>
 								<div class="star not_filled"></div>
 							</div>
-							<div class="price "> <span class="prop_name">Цена</span> 139,00 грн</div>
-							<div class="isbn">
-								<span class="prop_name">ISBN</span> 978-5-04-113987-2
+							<div class="price ">
+								<span class="prop_name">Цена</span>139,00 грн				
 							</div>
-							<div class="available instock">В наличии</div>
+
+
+							<div class="book_lang">
+								<a class="book_lang_item active" href="#">Русский</a>
+								<a class="book_lang_item" href="#">Украинский</a>
+							</div>
 							<div class="book_actions">
 								<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
 								<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
 							</div>
+								
 
-							<p class="book_fulldescr"> 
-								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
-								Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
+							<div class="book_series">Серия “Книжка-пазл”</div>
+							<div class="isbn">
+								<span class="prop_name">ISBN</span> 978-5-04-113987-2
+							</div>
+							<div class="available outofstock">Нет в наличии</div>
+
+							<p class="book_fulldescr">
+								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt. 
 							</p>
 
 							<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
@@ -1285,21 +1166,20 @@
 							
 							<div class="book_pictures carousel">
 								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
-									<div class="book_preview_wrap">
-										<img class="book_miniature" src="img/book_full.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<div class="book_carousel_outer">
+										<div class="book_preview_wrap">
+											<img class="book_miniature" src="img/book_full.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+										</div>
 									</div>
-								</div>
 								<div class="miniatures_next btn_next"></div>
 							</div>
 						</div>
 
 						<div class="book_info">
 							<h4>Набор обучающих карточек</h4>
-							<div class="book_series">Серия “Книжка-пазл”</div>
 							<div class="rating">
 								<div class="star filled"></div>
 								<div class="star filled"></div>
@@ -1307,26 +1187,35 @@
 								<div class="star filled"></div>
 								<div class="star not_filled"></div>
 							</div>
-							<div class="price "> <span class="prop_name">Цена</span> 139,00 грн</div>
-							<div class="isbn">
-								<span class="prop_name">ISBN</span> 978-5-04-113987-2
+							<div class="price ">
+								<span class="prop_name">Цена</span>139,00 грн				
 							</div>
-							<div class="available instock">В наличии</div>
+
+
+							<div class="book_lang">
+								<a class="book_lang_item active" href="#">Русский</a>
+								<a class="book_lang_item" href="#">Украинский</a>
+							</div>
 							<div class="book_actions">
 								<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
 								<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
 							</div>
+								
 
-							<p class="book_fulldescr"> 
-								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
-								Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
+							<div class="book_series">Серия “Книжка-пазл”</div>
+							<div class="isbn">
+								<span class="prop_name">ISBN</span> 978-5-04-113987-2
+							</div>
+							<div class="available instock">В наличии</div>
+
+							<p class="book_fulldescr">
+								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt. 
 							</p>
 
 							<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
 						</div>
 					</div>
 				</div>
-
 				<div class="book_item">
 					<div class="book_inner ">
 						<div class="closebtn"></div>
@@ -1340,21 +1229,20 @@
 							
 							<div class="book_pictures carousel">
 								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
-									<div class="book_preview_wrap">
-										<img class="book_miniature" src="img/book_full.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<div class="book_carousel_outer">
+										<div class="book_preview_wrap">
+											<img class="book_miniature" src="img/book_full.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+										</div>
 									</div>
-								</div>
 								<div class="miniatures_next btn_next"></div>
 							</div>
 						</div>
 
 						<div class="book_info">
 							<h4>Набор обучающих карточек</h4>
-							<div class="book_series">Серия “Книжка-пазл”</div>
 							<div class="rating">
 								<div class="star filled"></div>
 								<div class="star filled"></div>
@@ -1362,26 +1250,35 @@
 								<div class="star filled"></div>
 								<div class="star not_filled"></div>
 							</div>
-							<div class="price "> <span class="prop_name">Цена</span> 139,00 грн</div>
-							<div class="isbn">
-								<span class="prop_name">ISBN</span> 978-5-04-113987-2
+							<div class="price ">
+								<span class="prop_name">Цена</span>139,00 грн				
 							</div>
-							<div class="available instock">В наличии</div>
+
+
+							<div class="book_lang">
+								<a class="book_lang_item active" href="#">Русский</a>
+								<a class="book_lang_item" href="#">Украинский</a>
+							</div>
 							<div class="book_actions">
 								<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
 								<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
 							</div>
+								
 
-							<p class="book_fulldescr"> 
-								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
-								Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
+							<div class="book_series">Серия “Книжка-пазл”</div>
+							<div class="isbn">
+								<span class="prop_name">ISBN</span> 978-5-04-113987-2
+							</div>
+							<div class="available instock">В наличии</div>
+
+							<p class="book_fulldescr">
+								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt. 
 							</p>
 
 							<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
 						</div>
 					</div>
 				</div>
-
 				<div class="book_item">
 					<div class="book_inner ">
 						<div class="closebtn"></div>
@@ -1395,21 +1292,20 @@
 							
 							<div class="book_pictures carousel">
 								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
-									<div class="book_preview_wrap">
-										<img class="book_miniature" src="img/book_full.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<div class="book_carousel_outer">
+										<div class="book_preview_wrap">
+											<img class="book_miniature" src="img/book_full.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+										</div>
 									</div>
-								</div>
 								<div class="miniatures_next btn_next"></div>
 							</div>
 						</div>
 
 						<div class="book_info">
 							<h4>Набор обучающих карточек</h4>
-							<div class="book_series">Серия “Книжка-пазл”</div>
 							<div class="rating">
 								<div class="star filled"></div>
 								<div class="star filled"></div>
@@ -1417,26 +1313,35 @@
 								<div class="star filled"></div>
 								<div class="star not_filled"></div>
 							</div>
-							<div class="price "> <span class="prop_name">Цена</span> 139,00 грн</div>
-							<div class="isbn">
-								<span class="prop_name">ISBN</span> 978-5-04-113987-2
+							<div class="price ">
+								<span class="prop_name">Цена</span>139,00 грн				
 							</div>
-							<div class="available instock">В наличии</div>
+
+
+							<div class="book_lang">
+								<a class="book_lang_item active" href="#">Русский</a>
+								<a class="book_lang_item" href="#">Украинский</a>
+							</div>
 							<div class="book_actions">
 								<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
 								<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
 							</div>
+								
 
-							<p class="book_fulldescr"> 
-								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
-								Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
+							<div class="book_series">Серия “Книжка-пазл”</div>
+							<div class="isbn">
+								<span class="prop_name">ISBN</span> 978-5-04-113987-2
+							</div>
+							<div class="available instock">В наличии</div>
+
+							<p class="book_fulldescr">
+								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt. 
 							</p>
 
 							<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
 						</div>
 					</div>
 				</div>
-
 				<div class="book_item">
 					<div class="book_inner ">
 						<div class="closebtn"></div>
@@ -1450,21 +1355,20 @@
 							
 							<div class="book_pictures carousel">
 								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
-									<div class="book_preview_wrap">
-										<img class="book_miniature" src="img/book_full.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<div class="book_carousel_outer">
+										<div class="book_preview_wrap">
+											<img class="book_miniature" src="img/book_full.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+										</div>
 									</div>
-								</div>
 								<div class="miniatures_next btn_next"></div>
 							</div>
 						</div>
 
 						<div class="book_info">
 							<h4>Набор обучающих карточек</h4>
-							<div class="book_series">Серия “Книжка-пазл”</div>
 							<div class="rating">
 								<div class="star filled"></div>
 								<div class="star filled"></div>
@@ -1472,26 +1376,35 @@
 								<div class="star filled"></div>
 								<div class="star not_filled"></div>
 							</div>
-							<div class="price "> <span class="prop_name">Цена</span> 139,00 грн</div>
-							<div class="isbn">
-								<span class="prop_name">ISBN</span> 978-5-04-113987-2
+							<div class="price ">
+								<span class="prop_name">Цена</span>139,00 грн				
 							</div>
-							<div class="available instock">В наличии</div>
+
+
+							<div class="book_lang">
+								<a class="book_lang_item active" href="#">Русский</a>
+								<a class="book_lang_item" href="#">Украинский</a>
+							</div>
 							<div class="book_actions">
 								<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
 								<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
 							</div>
+								
 
-							<p class="book_fulldescr"> 
-								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
-								Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
+							<div class="book_series">Серия “Книжка-пазл”</div>
+							<div class="isbn">
+								<span class="prop_name">ISBN</span> 978-5-04-113987-2
+							</div>
+							<div class="available instock">В наличии</div>
+
+							<p class="book_fulldescr">
+								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt. 
 							</p>
 
 							<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
 						</div>
 					</div>
 				</div>
-
 				<div class="book_item">
 					<div class="book_inner ">
 						<div class="closebtn"></div>
@@ -1505,21 +1418,20 @@
 							
 							<div class="book_pictures carousel">
 								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
-									<div class="book_preview_wrap">
-										<img class="book_miniature" src="img/book_full.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<div class="book_carousel_outer">
+										<div class="book_preview_wrap">
+											<img class="book_miniature" src="img/book_full.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+										</div>
 									</div>
-								</div>
 								<div class="miniatures_next btn_next"></div>
 							</div>
 						</div>
 
 						<div class="book_info">
 							<h4>Набор обучающих карточек</h4>
-							<div class="book_series">Серия “Книжка-пазл”</div>
 							<div class="rating">
 								<div class="star filled"></div>
 								<div class="star filled"></div>
@@ -1527,26 +1439,35 @@
 								<div class="star filled"></div>
 								<div class="star not_filled"></div>
 							</div>
-							<div class="price "> <span class="prop_name">Цена</span> 139,00 грн</div>
-							<div class="isbn">
-								<span class="prop_name">ISBN</span> 978-5-04-113987-2
+							<div class="price ">
+								<span class="prop_name">Цена</span>139,00 грн				
 							</div>
-							<div class="available instock">В наличии</div>
+
+
+							<div class="book_lang">
+								<a class="book_lang_item active" href="#">Русский</a>
+								<a class="book_lang_item" href="#">Украинский</a>
+							</div>
 							<div class="book_actions">
 								<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
 								<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
 							</div>
+								
 
-							<p class="book_fulldescr"> 
-								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
-								Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
+							<div class="book_series">Серия “Книжка-пазл”</div>
+							<div class="isbn">
+								<span class="prop_name">ISBN</span> 978-5-04-113987-2
+							</div>
+							<div class="available instock">В наличии</div>
+
+							<p class="book_fulldescr">
+								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt. 
 							</p>
 
 							<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
 						</div>
 					</div>
 				</div>
-
 				<div class="book_item">
 					<div class="book_inner ">
 						<div class="closebtn"></div>
@@ -1560,21 +1481,20 @@
 							
 							<div class="book_pictures carousel">
 								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
-									<div class="book_preview_wrap">
-										<img class="book_miniature" src="img/book_full.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+									<div class="book_carousel_outer">
+										<div class="book_preview_wrap">
+											<img class="book_miniature" src="img/book_full.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+											<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+										</div>
 									</div>
-								</div>
 								<div class="miniatures_next btn_next"></div>
 							</div>
 						</div>
 
 						<div class="book_info">
 							<h4>Набор обучающих карточек</h4>
-							<div class="book_series">Серия “Книжка-пазл”</div>
 							<div class="rating">
 								<div class="star filled"></div>
 								<div class="star filled"></div>
@@ -1582,129 +1502,29 @@
 								<div class="star filled"></div>
 								<div class="star not_filled"></div>
 							</div>
-							<div class="price "> <span class="prop_name">Цена</span> 139,00 грн</div>
-							<div class="isbn">
-								<span class="prop_name">ISBN</span> 978-5-04-113987-2
+							<div class="price ">
+								<span class="prop_name">Цена</span>139,00 грн				
 							</div>
-							<div class="available instock">В наличии</div>
+
+
+							<div class="book_lang">
+								<a class="book_lang_item active" href="#">Русский</a>
+								<a class="book_lang_item" href="#">Украинский</a>
+							</div>
 							<div class="book_actions">
 								<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
 								<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
 							</div>
+								
 
-							<p class="book_fulldescr"> 
-								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
-								Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
-							</p>
-
-							<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
-						</div>
-					</div>
-				</div>
-
-				<div class="book_item">
-					<div class="book_inner ">
-						<div class="closebtn"></div>
-						<div class="book_preview">
-							<div class="main_img">
-								<img src="img/book_full.jpg" alt="">
-								<div class="book_show">	
-									<button class="book_show_preview btn btn_grad">Предпросмотр</button>
-								</div>
-							</div>
-							
-							<div class="book_pictures carousel">
-								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
-									<div class="book_preview_wrap">
-										<img class="book_miniature" src="img/book_full.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-									</div>
-								</div>
-								<div class="miniatures_next btn_next"></div>
-							</div>
-						</div>
-
-						<div class="book_info">
-							<h4>Набор обучающих карточек</h4>
 							<div class="book_series">Серия “Книжка-пазл”</div>
-							<div class="rating">
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star not_filled"></div>
-							</div>
-							<div class="price "> <span class="prop_name">Цена</span> 139,00 грн</div>
 							<div class="isbn">
 								<span class="prop_name">ISBN</span> 978-5-04-113987-2
 							</div>
 							<div class="available instock">В наличии</div>
-							<div class="book_actions">
-								<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
-								<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
-							</div>
 
-							<p class="book_fulldescr"> 
-								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
-								Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
-							</p>
-
-							<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
-						</div>
-					</div>
-				</div>
-
-				<div class="book_item">
-					<div class="book_inner ">
-						<div class="closebtn"></div>
-						<div class="book_preview">
-							<div class="main_img">
-								<img src="img/book_full.jpg" alt="">
-								<div class="book_show">	
-									<button class="book_show_preview btn btn_grad">Предпросмотр</button>
-								</div>
-							</div>
-							
-							<div class="book_pictures carousel">
-								<div class="miniatures_prev btn_prev"></div>
-				<div class="book_carousel_outer">
-									<div class="book_preview_wrap">
-										<img class="book_miniature" src="img/book_full.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-										<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-									</div>
-								</div>
-								<div class="miniatures_next btn_next"></div>
-							</div>
-						</div>
-
-						<div class="book_info">
-							<h4>Набор обучающих карточек</h4>
-							<div class="book_series">Серия “Книжка-пазл”</div>
-							<div class="rating">
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star filled"></div>
-								<div class="star not_filled"></div>
-							</div>
-							<div class="price "> <span class="prop_name">Цена</span> 139,00 грн</div>
-							<div class="isbn">
-								<span class="prop_name">ISBN</span> 978-5-04-113987-2
-							</div>
-							<div class="available instock">В наличии</div>
-							<div class="book_actions">
-								<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
-								<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
-							</div>
-
-							<p class="book_fulldescr"> 
-								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. 
-								Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt.
+							<p class="book_fulldescr">
+								Magna aliquip aute consectetur ut sunt duis reprehenderit commodo mollit id culpa anim dolore commodo. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt ullamco. Elit culpa elit consequat voluptate qui ad id irure labore et incididunt. 
 							</p>
 
 							<a href="#" class="btn btn_bordered"><span>Подробнее</span> </a>
@@ -1797,6 +1617,13 @@
 
 	</footer>
 
+
+<!-- added to cart -->
+
+	<div id="addedtocart">
+		<p>Товар добавлен в корзину</p>
+		<a href="#">Открыть <span class="hidemobile">корзину</span></a>
+	</div>
 
 
 <!-- callback modal -->

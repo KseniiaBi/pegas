@@ -1,0 +1,37 @@
+<?php
+// Text
+$_['text_new_subject'] = '%s - Check %s';
+$_['text_new_greeting'] = 'Thank you for your interest in the product %s. Your order has been received and will be processed after confirmation of payment. ';
+$_['text_new_received'] = 'You have received the order.';
+$_['text_new_link'] = 'To view your order click on the link below:';
+$_['text_new_order_detail'] = 'Order Information';
+$_['text_new_instruction'] = 'Instructions';
+$_['text_new_order_id'] = 'Order №:';
+$_['text_new_date_added'] = 'Date';
+$_['text_new_order_status'] = 'Order Status';
+$_['text_new_payment_method'] = 'Method of payment';
+$_['text_new_shipping_method'] = 'Delivery method:';
+$_['text_new_email'] = 'E-mail';
+$_['text_firstname'] = 'Name:';
+$_['text_new_telephone'] = 'Telephone';
+$_['text_new_ip'] = 'IP address';
+$_['text_new_payment_address'] = 'Address of payment';
+$_['text_new_shipping_address'] = 'Delivery address';
+$_['text_new_products'] = 'goods';
+$_['text_new_product'] = 'item';
+$_['text_code']        = 'SCU';
+$_['option_language']  = 'language';
+$_['text_new_quantity'] = 'Number';
+$_['text_new_price'] = 'Price';
+$_['text_new_order_total'] = 'Order Summary';
+$_['text_new_total'] = 'Total';
+$_['text_new_download'] = 'After confirmation of payment, you can click on the link below to gain access to your downloadable products';
+$_['text_new_comment'] = 'Note to the order:';
+$_['text_new_footer'] = 'If you have any questions, please reply to this email';
+$_['text_update_subject'] = '%s - Order Change %s';
+$_['text_update_order'] = 'Order №:';
+$_['text_update_date_added'] = 'Order date:';
+$_['text_update_order_status'] = 'The status of your order has been changed to:';
+$_['text_update_comment'] = 'Comments to your order:';
+$_['text_update_link'] = 'To view your order click on the link below:';
+$_['text_update_footer'] = 'If you have any questions, please reply to this email.';

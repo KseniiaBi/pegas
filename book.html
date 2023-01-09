@@ -120,8 +120,8 @@
 					<div class="book_preview_wrap">
 						<img class="book_miniature" src="img/book_full.jpg" alt="">	
 						<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-						<img class="book_miniature" src="img/book_preview.jpg" alt="">	
-						<img class="book_miniature" src="img/book_preview.jpg" alt="">	
+						<!-- <img class="book_miniature" src="img/book_preview.jpg" alt="">	
+						<img class="book_miniature" src="img/book_preview.jpg" alt=""> -->	
 					</div>
 				</div>
 				<div class="miniatures_next btn_next"></div>
@@ -146,19 +146,16 @@
 					<div class="disc_amount">Скидка 20%</div>
 				</div>
 			</div>
-
-			<div class="book_actions">
-
-				<div class="book_lang">
-					<a class="book_lang_item active" href="#">Русский</a>
-					<a class="book_lang_item" href="#">Украинский</a>
-				</div>
-				<div class="book_add">
-					<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
-					<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
-				</div>
-				
+			
+			<div class="book_lang">
+				<a class="book_lang_item active" href="#">Русский</a>
+				<a class="book_lang_item" href="#">Украинский</a>
 			</div>
+			<div class="book_actions">
+				<div class="buy btn btn_grad">Добавить в  <img src="img/cart.svg" alt="корзина"></div>
+				<div class="btn btn_bordered like"><img src="img/heart_grad.svg" alt=""></div>
+			</div>
+				
 
 			<div class="book_series">Серия “Книжка-пазл”</div>
 			<div class="isbn">
@@ -939,7 +936,17 @@
 	<!-- modal show book preview -->
 
 	<div id="showbook" class="modal"></div>
-	<script src="main.js"></script>
 
+<!-- modal show book big picture -->
+	<div id="show_pic" class="modal">
+		<div class="modal_content">
+			<div class="closebtn"></div>
+
+			<div class="pic_prev btn_prev"></div>
+			<div class="pic_next btn_next"></div>
+		</div>
+	</div>
+
+	<script src="main.js"></script>
 </body>
 </html>

@@ -1,0 +1,34 @@
+/*/******************************************************
+ * @package Showmore product Module Opencart Theme Framework for Opencart 2.x
+ * @version 1.0.1
+ * @author http://dev-trust.com
+ * @copyright Copyright (C) 2015 dev-trust.com <@emai:developer.trust@gmail.com.>.All rights reserved.
+ * @license   GNU General Public License version 3
+*******************************************************/
+span.block_box_next {
+    background-color: #363636;
+    background-image: linear-gradient(to bottom, #444444, #222222);
+    background-repeat: repeat-x;
+    border-color: #222222 #222222 #000000;
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+span.block_box_next a {
+    color: #fff;
+    text-transform: uppercase;
+}
+span.block_box_next a:focus {
+    text-transform: uppercase;
+    outline: transparent;
+    text-decoration: none;
+}
+/*.block_pagination {
+    display: none;
+}*/
+.col-sm-6.text-right {
+    display: none;
+}
